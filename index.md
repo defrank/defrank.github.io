@@ -1,4 +1,5 @@
-# Derek M Frank
+# Derek Michael Frank
+Yes, I have three first names! Worked well for sports...
 
 ## About me
 
