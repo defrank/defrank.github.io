@@ -1,0 +1,4 @@
+name: Derek Michael Frank
+markdown: kramdown
+gems:
+    - jekyll-sitemap
