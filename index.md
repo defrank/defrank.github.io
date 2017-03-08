@@ -17,15 +17,24 @@ Los Angeles, CA
 * Dog training.
 
 ### Favorites
-**Color:** green (even though I'm blue-green colorblind...)
+#### Color
+Green (even though I'm blue-green colorblind...)
 
-**Book (leisure/series):** Harry Potter (my SO and I continue to re-listen to the Stephen Fry audiobooks)
+#### Book
 
-**Book (leisure/one-off):** Stephen King's It
+##### Leisure
 
-**Book (educational):** Pragmatic Programmer (I have a need to keep improving myself)
+###### Series
+Harry Potter (my SO and I continue to re-listen to the Stephen Fry audiobooks)
 
-**Manga:** Dragon Ball (I'm obsessed)
+###### one-off
+Stephen King's It
+
+##### educational
+Pragmatic Programmer (I have a need to keep improving myself)
+
+#### Manga
+Dragon Ball (I'm obsessed)
 
 ## Pets
 I have two crazy, smart, and silly blue heelers, Kira and Dino.
