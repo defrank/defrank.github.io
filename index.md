@@ -29,6 +29,7 @@ Los Angeles, CA
 
 ## Pets
 I have two crazy, smart, and silly blue heelers, Kira and Dino.
+![kira rolling eyes at dee and dino](/img/pet/kira-rolling-eyes-dee-and-dino.jpeg)
 
 ## Links directory
 * [GitHub](https://github.com/defrank)
