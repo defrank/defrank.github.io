@@ -1,4 +1,7 @@
 name: Derek Michael Frank
 markdown: kramdown
 gems:
+    - jekyll-coffescript
+    - jekyll-paginate
+    - jekyll-watch
     - jekyll-sitemap
