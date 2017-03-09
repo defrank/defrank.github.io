@@ -1,7 +1,14 @@
-name: Derek Michael Frank
+author: Derek M. Frank
+name: Derek M. Frank
+title: Derek M. Frank
+url: www.derekmfrank.com
+
+timezone: America/Los_Angeles
+
+google_analytics: UA-39564024-2
+
 markdown: kramdown
 theme: jekyll-theme-hacker
-google_analytics: UA-39564024-2
 gems:
     - jekyll-coffescript
     - jekyll-paginate

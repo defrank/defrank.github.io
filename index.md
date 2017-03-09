@@ -1,10 +1,7 @@
 ---
-title: Derek M. Frank
+title: About Me
 layout: default
 ---
-
-# Derek Michael Frank
-Yes, I have three first names! Worked well for sports...
 
 ## About me
 
