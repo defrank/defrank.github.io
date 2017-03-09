@@ -1,6 +1,7 @@
 name: Derek Michael Frank
 markdown: kramdown
 theme: jekyll-theme-hacker
+google_analytics: UA-39564024-2
 gems:
     - jekyll-coffescript
     - jekyll-paginate
