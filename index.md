@@ -52,4 +52,4 @@ I have two crazy, smart, and silly blue heelers, Kira and Dino.
 
 ----
 
-&#169; 2017 Derek M. Frank, Powered by [Free DNS](https://freedns.afraid.org/) and [GitHub Pages](https://pages.github.io/).
+&#169; 2017 Derek M. Frank, Powered by [Free DNS](https://freedns.afraid.org/) and [GitHub Pages](https://pages.github.com/).
