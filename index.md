@@ -7,11 +7,12 @@ Yes, I have three first names! Worked well for sports...
 ## About me
 
 ### Formalities
-#### Occupation
-Software Engineer
-
-#### Location
-Los Angeles, CA
+<dl>
+    <dt>Occupation</dt>
+    <dd>Software Engineer</dd>
+    <dt>Location</dt>
+    <dd>Los Angeles, CA</dd>
+</dl>
 
 ### Hobbies
 * Learning
@@ -21,35 +22,35 @@ Los Angeles, CA
 * Dog training.
 
 ### Favorites
-#### Color
-Green (even though I'm blue-green colorblind...)
+<dl>
+    <dt>Color</dt>
+    <dd>Green (even though I'm blue-green colorblind...)</dd>
 
-#### Book
+    <dt>Book (leisure)</dt>
+    <dd>Harry Potter (my SO and I continue to re-listen to the Stephen Fry audiobooks)</dd>
 
-##### Leisure
+    <dt>Book (educational)</dt>
+    <dd>Pragmatic Programmer (I have a need to keep improving myself)</dd>
 
-###### Series
-Harry Potter (my SO and I continue to re-listen to the Stephen Fry audiobooks)
+    <dt>Manga</dt>
+    <dd>Dragon Ball (I'm obsessed)</dd>
+</dl>
 
-###### one-off
-Stephen King's It
-
-##### educational
-Pragmatic Programmer (I have a need to keep improving myself)
-
-#### Manga
-Dragon Ball (I'm obsessed)
+----
 
 ## Pets
 I have two crazy, smart, and silly blue heelers, Kira and Dino.
 ![kira rolling eyes at dee and dino](/img/pet/kira-rolling-eyes-dee-and-dino.jpeg)
+
+----
 
 ## Links directory
 * [GitHub](https://github.com/defrank)
 * [BitBucket](https://bitbucket.com/deerex)
 * [LinkedIn](https://www.linkedin.com/in/derekmfrank)
 * [Instagram](https://www.instagram.com/__dmf__)
-* Sorry, I have my Facebook disabled.
+* Facebook is disabled.
+* Don't use Google+
 
 ----
 
