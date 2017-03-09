@@ -1,5 +1,5 @@
 ---
-title: Derek M. Frank:
+title: Derek M. Frank
 ---
 # Derek Michael Frank
 Yes, I have three first names! Worked well for sports...
