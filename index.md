@@ -1,12 +1,15 @@
 ---
 title: Derek M. Frank
+layout: default
 ---
+
 # Derek Michael Frank
 Yes, I have three first names! Worked well for sports...
 
 ## About me
 
 ### Formalities
+
 <dl>
     <dt>Occupation</dt>
     <dd>Software Engineer</dd>
@@ -15,6 +18,7 @@ Yes, I have three first names! Worked well for sports...
 </dl>
 
 ### Hobbies
+
 * Learning
 * Reading and listening to audiobooks
 * Snowboarding
@@ -22,6 +26,7 @@ Yes, I have three first names! Worked well for sports...
 * Dog training.
 
 ### Favorites
+
 <dl>
     <dt>Color</dt>
     <dd>Green (even though I'm blue-green colorblind...)</dd>
@@ -39,12 +44,14 @@ Yes, I have three first names! Worked well for sports...
 ----
 
 ## Pets
+
 I have two crazy, smart, and silly blue heelers, Kira and Dino.
 ![kira rolling eyes at dee and dino](/img/pet/kira-rolling-eyes-dee-and-dino.jpeg)
 
 ----
 
 ## Links directory
+
 * [GitHub](https://github.com/defrank)
 * [BitBucket](https://bitbucket.com/deerex)
 * [LinkedIn](https://www.linkedin.com/in/derekmfrank)
