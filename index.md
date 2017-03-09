@@ -38,7 +38,7 @@ layout: default
     <dd>Dragon Ball (I'm obsessed)</dd>
 
     <dt>Lift</dt>
-    <dd>Sumo deadlift</dt>
+    <dd>Sumo deadlift</dd>
 </dl>
 
 ----
