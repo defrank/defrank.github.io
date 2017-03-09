@@ -49,3 +49,7 @@ I have two crazy, smart, and silly blue heelers, Kira and Dino.
 * [BitBucket](https://bitbucket.com/deerex)
 * [Instagram](https://www.instagram.com/__dmf__)
 * Sorry, I have my Facebook disabled.
+
+----
+My thanks and support goes out to [Free DNS](https://freedns.afraid.org/) and [GitHub Pages](https://pages.github.io/).
+Copyright 2017
