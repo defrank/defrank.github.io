@@ -1,3 +1,9 @@
+/**
+ * Sources:
+ *     http://stackoverflow.com/a/24103596
+ *     http://www.quirksmode.org/js/cookies.html
+ */
+
 function createCookie(name,value,days) {
     var expires = "";
     if (days) {
