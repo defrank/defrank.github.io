@@ -13,3 +13,4 @@ gems:
     - jekyll-paginate
     - jekyll-watch
     - jekyll-sitemap
+    - jekyll-seo-tag
