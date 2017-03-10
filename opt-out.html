@@ -1,0 +1,21 @@
+---
+title: Opt-out
+layout: blank
+sitemap: false
+---
+
+<noscript>
+    Cannot opt-out without Javascript turned on!
+</noscript>
+
+<script>
+    document.write('You will not be tracked by:');
+</script>
+<ul>
+    <script>
+        {% include cookies.js %}
+
+        createCookie('optout', true, 365);
+        document.write('<li>Google Analytics</li>');
+    </script>
+<ul>
