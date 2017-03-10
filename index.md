@@ -56,5 +56,7 @@ I have two crazy, smart, and silly blue heelers, Kira and Dino.
 * [BitBucket](https://bitbucket.com/deerex)
 * [LinkedIn](https://www.linkedin.com/in/derekmfrank)
 * [Instagram](https://www.instagram.com/__dmf__)
+* [Goodreads](https://goodreads.com/dmfrank)
+* [Last.fm](https://www.last.fm/user/derekmfrank)
 * Facebook is disabled.
 * Don't use Google+
