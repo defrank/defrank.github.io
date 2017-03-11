@@ -1,4 +1,4 @@
-# www.derekmfrank.com
+# derekmfrank.com
 
 ## Credits
 * [FreeDNS](https://freedns.afraid.org/)
