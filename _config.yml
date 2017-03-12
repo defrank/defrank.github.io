@@ -22,13 +22,13 @@ baseurl: ""  # the subpath of your site, e.g. /blog
 url: "https://derekmfrank.com"  # the base hostname & protocol for your site, e.g. http://example.com
 
 google_analytics: UA-39564024-2
-bitbucket: deerex
-linkedin: derekmfrank
-instagram: __dmf__
-goodreads: dmfrank
-lastfm: derekmfrank
-facebook: derekmfrank
-googleplus: 110520366075871893334
+bitbucket_username: deerex
+linkedin_username: derekmfrank
+instagram_username: __dmf__
+goodreads_username: dmfrank
+lastfm_username: derekmfrank
+facebook_username: derekmfrank
+googleplus_id: 110520366075871893334
 
 # Build settings
 permalink: pretty
