@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/dmf
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://derekmfrank.com
+  * I am dmf (https://keybase.io/dmf) on keybase.
+  * I have a public key ASDiHADv5nOP1vdb1mK0CwOZepikxPJW_e6jNQiI5a06Fwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120e21c00efe6738fd6f75bd662b40b03997a98a4c4f256fdeea3350888e5ad3a170a",
+            "host": "keybase.io",
+            "kid": "0120e21c00efe6738fd6f75bd662b40b03997a98a4c4f256fdeea3350888e5ad3a170a",
+            "uid": "d42e789f1c33e4b539c5658f5e3cdb19",
+            "username": "dmf"
+        },
+        "service": {
+            "hostname": "derekmfrank.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.20"
+    },
+    "ctime": 1491698678,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1491698644,
+        "hash": "c23007855ce13f652050ecea88430f26bce60ce231862928cc89392c13215203a54ac8edf58b6583f15102fcd2c4cd534f11dd65a85036f9e92bf01e4ab9265a",
+        "seqno": 1007387
+    },
+    "prev": "8d0f1709d9fa053d5966596aec46e7403d2dfa0218329fd9e3abf0db60d3c708",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg4hwA7+Zzj9b3W9ZitAsDmXqYpMTyVv3uozUIiOWtOhcKp3BheWxvYWTFAvN7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZTIxYzAwZWZlNjczOGZkNmY3NWJkNjYyYjQwYjAzOTk3YTk4YTRjNGYyNTZmZGVlYTMzNTA4ODhlNWFkM2ExNzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZTIxYzAwZWZlNjczOGZkNmY3NWJkNjYyYjQwYjAzOTk3YTk4YTRjNGYyNTZmZGVlYTMzNTA4ODhlNWFkM2ExNzBhIiwidWlkIjoiZDQyZTc4OWYxYzMzZTRiNTM5YzU2NThmNWUzY2RiMTkiLCJ1c2VybmFtZSI6ImRtZiJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiZGVyZWttZnJhbmsuY29tIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMjAifSwiY3RpbWUiOjE0OTE2OTg2NzgsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ5MTY5ODY0NCwiaGFzaCI6ImMyMzAwNzg1NWNlMTNmNjUyMDUwZWNlYTg4NDMwZjI2YmNlNjBjZTIzMTg2MjkyOGNjODkzOTJjMTMyMTUyMDNhNTRhYzhlZGY1OGI2NTgzZjE1MTAyZmNkMmM0Y2Q1MzRmMTFkZDY1YTg1MDM2ZjllOTJiZjAxZTRhYjkyNjVhIiwic2Vxbm8iOjEwMDczODd9LCJwcmV2IjoiOGQwZjE3MDlkOWZhMDUzZDU5NjY1OTZhZWM0NmU3NDAzZDJkZmEwMjE4MzI5ZmQ5ZTNhYmYwZGI2MGQzYzcwOCIsInNlcW5vIjo2LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQPbWZkkJ5P5W50jv4ekif0yIPYdKSyf+pGrlfQCS3lBu1HqkvgUkrQsTg5vD/metj3dzWCNj/pf0GBGCdvtcqAyoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCBEiIKvmJ0OcrLGqDxKrHgLYOVhSIub0sY9vzq10NiXYKN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dmf
+
+==================================================================
