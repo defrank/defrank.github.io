@@ -1,0 +1,322 @@
+---
+title: Resume
+layout: blank
+---
+
+<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900" rel="stylesheet">
+
+<style scoped="scoped">
+    * {
+        -o-user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+   }
+
+    body {
+        /*
+        min-width: 240px;
+        max-width: 768px;
+        margin: 40px auto;
+         */
+        min-width: 320px;
+        margin: 40px;
+        font-size: 11pt;  /* keep between 10pt and 12pt */
+        font-family: Lato, "Open Sans", Helvetica, Calibri, "PT Sans", Verdana, Arial, sans-serif;
+    }
+    @media print {
+        body {
+            max-width: 768px;
+            margin: 40px 60px;
+        }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+    }
+
+    p {
+        font-weight: 300;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    a:visited {
+        color: inherit;
+    }
+
+    dt {
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+    dt::after {
+        content: ':';
+    }
+    dd {
+        margin: 0;
+    }
+
+    footer {
+        text-align: center;
+    }
+    @media print {
+        footer {
+            display: none;
+        }
+    }
+
+    @media print {
+        aside, nav {
+            display: none;
+        }
+    }
+
+    h1 a,
+    h2 a,
+    h3 a,
+    h4 a,
+    h5 a,
+    h6 a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .hidden {
+        display: none;
+        visibility: hidden;
+    }
+
+    aside#print {
+        position: fixed;
+        right: 2%;
+        bottom: 2%;
+    }
+
+    img#profile-pic {
+        float: right;
+        border-radius: 50px;
+    }
+
+    address#contact-info {
+        font-size: 0.8rem;
+        font-style: normal;
+    }
+    address#contact-info dt,
+    address#contact-info dd {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    address#contact-info dt {
+        width: 64px;
+        font-size: 0.9em;
+        color: #7f7f7f;
+    }
+
+    dl.skills {
+    }
+    dl.skills dd {
+        display: inline-block;
+    }
+    dl.skills dd::after {
+        content: ',';
+    }
+    dl.skills dd:last {
+        content: '';
+    }
+
+    #experience > div {
+    }
+    #experience > div + div {
+        margin-top: 20px;
+    }
+
+    dl.courses {
+        font-size: 0.8rem;
+    }
+    dl.courses dd.course {
+        display: inline-block;
+        width: 24%;
+    }
+    @media all and (max-width: 1024px) {
+        dl.courses dd.course {
+            width: 33%;
+        }
+    }
+    @media screen and (max-width: 768px) and not print {
+        dl.courses dd.course {
+            width: 49%;
+        }
+    }
+    @media all and (max-width: 512px) {
+        dl.courses dd.course {
+            width: 99%;
+        }
+    }
+
+    .date {
+        float: right;
+    }
+
+    .close {
+        float: right;
+    }
+</style>
+
+<nav>
+</nav>
+
+<header unselectable="on">
+    <img id="profile-pic"
+         src="/img/dmf/dmf-snowboarding-lens-flare.jpg"
+         alt="Derek M. Frank snowboarding with lens flare"
+         />
+
+    <h1>Derek M Frank</h1>
+    <h2>Software Engineer</h2>
+
+    <address id="contact-info">
+        <dl>
+            <div class="email">
+                <dt>Email</dt>
+                <dd><a href="mailto:resume@derekmfrank.com">resume {at} derekmfrank {dot} com</a></dd>
+            </div>
+            <div class="link">
+                <dt>Website</dt>
+                <dd><a href="https://derekmfrank.com">derekmfrank.com</a></dd>
+            <div>
+            </div class="geolocation">
+                <dt>Location</dt>
+                <dd><a target="_blank" href="https://www.google.com/maps/dir//Chatsworth,+CA+91311">Los Angeles, CA</a></dd>
+            </div>
+        </dl>
+    </address>
+</header>
+
+<main>
+    <section id="objective">
+    </section>
+
+    <section id="summary">
+        <p>
+            I am a developer trying to remain pragmatic by continuing to learn and improve myself.  
+
+            I am a purist.
+            I follow best practices.
+            I do my research.
+            I care deeply about the quality of my work.
+            I hold myself and everyone around me to high standards.
+
+            I am detail oriented.
+            A bit OCD and a perfectionist, but this only drives my use of best practices, coding
+            style/formatting, testing, and documentation.  In other words, I strive for complete
+            and maintainable software components.
+
+            I <em>love</em> learning.
+        </p>
+        <section id="notices">
+            <em id="recruiter-notice" class="notice">I do NOT work with 3rd party recruiters, period.</em>
+        </section>
+    </section>
+
+    <section id="skills">
+        <h3>Skills</h3>
+        <dl id="technology-skills" class="skills">
+            <dt>Expert/Advanced</dt>
+            <dd>Python</dd>
+            <dd>Javascript</dd>
+
+            <dt>Proficient</dt>
+            <dd>SQL</dd>
+            <dd>Bash</dd>
+            <dd>Zsh</dd>
+            <dd>C</dd>
+            <dd>C++</dd>
+            <dd>Java</dd>
+            <dd>Common Lisp</dd>
+            <dd>Haskell</dd>
+
+            <dt>Prior experience</dt>
+            <dd>Prolog</dd>
+            <dd>Scheme</dd>
+            <dd>OCaml</dd>
+            <dd>Perl</dd>
+            <dd>Lua</dd>
+        </dl>
+    </section>
+
+    <section id="experience">
+        <h3>Experience</h3>
+        <div class="job">
+            <div class="date"><time>2014</time> - Present</div>
+            <h4>Programmer</h4>
+            <a href="http://www.readz.com/" target="_blank">Star Labs LTD - Readz, Woodland Hills, CA</a>
+        </div>
+        <div class="job">
+            <div class="date"><time>2013</time> - <time>2014</time></div>
+            <h4>Embedded Systems Test Engineer - Contractor</h4>
+            <a href="http://www.medtronicdiabetes.com/home" target="_blank">Medtronic MiniMed, Northridge, CA</a>
+            
+        </div>
+    </section>
+
+    <section id="education">
+        <h3>Education</h3>
+        <div class="school">
+            <div class="date"><time>2008</time> - <time>2012</time></div>
+            <h4>Bachelor of Science Degree, Computer Science</h4>
+            <a href="http://soe.ucsc.edu/" target="_blank">University of California, Santa Cruz</a>
+            <dl class="courses">
+                <dt>Relevant Courses</dt>
+                <dd class="course">Artificial Intelligence</dd>
+                <dd class="course">Operating Systems</dd>
+                <dd class="course">Fundamentals of Compiler Design</dd>
+                <dd class="course">Advanced Programming</dd>
+                <dd class="course">Computer Networks</dd>
+                <dd class="course">Computational Models</dd>
+                <dd class="course">Computer Architecture</dd>
+                <dd class="course">Computational Methods</dd>
+                <dd class="course">Comparative Programming Languages</dd>
+                <dd class="course"></dd>
+            </dl>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&#xa9; 2017 Derek M. Frank</p>
+    <p><em>I do not authorize 3rd parties to alter this content or represent me.</em></p>
+</footer>
+
+<aside id="print">
+    <button type="button" onclick="window.print()">Print me!</button>
+</aside>
+
+<aside>
+    <article id="notice" class="hidden">
+        <div class="temp">
+            <a href="#" class="close">[X] Close</a>
+            <h5>Notice to 3rd Party Recruiters</h5>
+            <p>Dear Unsolicited Recruiters:
+                <br/><br/>
+                I am happy to work with those representing legitimate companies at fair rates.  Unfortunately, there are too many unscrupulous clowns out there trying to make a quick buck that are disrespectful of my time. So I have adopted a set of non-negotiable policies for dealing with 3rd party entities.  If you are able to respect and abide by ALL of my policies then great, perhaps we can work together, and if not, PLEASE MOVE ON.
+            </p>
+            <ol>
+                <li>I do not deal with off-shore companies under any circumstances. You will be marked as spam.</li>
+                <li>I only consider opportunities local to my current address- San Francisco, SF Peninsula, or San Jose.  Send me an out of state listing. I mark you as spam.</li>
+                <li>Send a DETAILED JOB DESCRIPTION in the FIRST email including the EXACT CITY where the organization is located.  I do not respond to emails where you only state in your opinion that you have a great job opportunity and want to chat further.  It&rsquo;s a waste of my time and I mark you as a spammer. </li>
+                <li>The job listing better be REAL. If it is not, you are marked as spam.</li>
+                <li>DO NOT claim to represent a company unless you have done previous business with them- meaning you have successfully placed other candidates there, and DO NOT claim to be representing me to any organization unless all the terms in this list are agreed to and abided by.  I will make an extra effort to notify the principle organization of your fraudulent efforts.</li>
+                <li>If you send me a listing, and I respond with interest, if I don't hear back from you, I mark you as spam.</li>
+                <li>If you have a &quot;fast growing start-up&quot; I am not interested unless it is for an hourly contract rate.  I have ended up working for free too many times, and I will not do it again. Again, you are marked as spam.</li>
+                <li>I will however, consider being part of an initial founding start-up team if the idea is clearly viable. I perform due diligence. Be prepared to provide the necessary information.</li>
+                <li>I will not provide reference contact information until interviews have been conducted with the hiring manager AND interest from both sides has been expressed.</li>
+                <li>I require a phone screen with the hiring manager before I will agree to an on-site interview.</li>
+                <li>I will not spend more than 5 minutes creating special presentations, filling out questionnaires or taking tests.</li>
+            </ol>
+        </div>
+    </article>
+</aside>
