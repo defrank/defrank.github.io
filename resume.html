@@ -7,11 +7,10 @@ layout: blank
 
 <style scoped="scoped">
     * {
-        -o-user-select: none;
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -khtml-user-select: none;
         -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
         user-select: none;
    }
 
@@ -26,15 +25,134 @@ layout: blank
         font-size: 11pt;  /* keep between 10pt and 12pt */
         font-family: Lato, "Open Sans", Helvetica, Calibri, "PT Sans", Verdana, Arial, sans-serif;
     }
+    @media all and (max-width: 640px) {
+        body {
+            margin: 20px;
+            font-size: 10pt;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+        }
+    }
     @media print {
         body {
             max-width: 768px;
             margin: 40px 60px;
         }
+
+        @page {
+            size: 8.5in 11in;
+            margin: 0;
+        }
+        @-ms-viewport{
+            width: 100%;
+            /* the viewport for small devices is set to 320px  */
+            initial-scale: 1;
+            zoom: 1;
+        }
+        @-o-viewport {
+            width: device-width;
+            initial-scale: 1;
+            zoom: 1;
+        }
+        @viewport {
+            width: device-width;
+            initial-scale: 1;
+            zoom: 1;
+        }
+
+        /* Override user settings like no background graphics. */
+        * {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            page-break-before: auto;
+            break-before: auto;
+            page-break-inside: auto;
+            break-inside: auto;
+            page-break-after: auto;
+            break-after: auto;
+        }
+
+        /* Hide browser stuff. */
+        ::-webkit-scrollbar,
+        body::-webkit-scrollbar {
+            display: none !important;
+            visibility: collapse !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+    } 
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header > img {
+        max-width: 230px;
+        max-height: 230px;
+        order: 2;
+    }
+    header > address {
+        order: 1;
+    }
+    img#profile-pic {
+        border-radius: 8px;
+    }
+    address#contact-info {
+        font-style: normal;
+    }
+    address#contact-info dt,
+    address#contact-info dd {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    address#contact-info dt {
+        width: 64px;
+        font-size: 0.9em;
+        color: #7f7f7f;
+    }
+    @media screen and (max-width: 640px) {
+        header {
+            font-size: 0.6rem;
+        }
+        header > img,
+        header > address {
+            order: 0;  /* return to DOM order */
+        }
+        header > img {
+            max-width: 110px;
+            max-height: 110px;
+        }
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    main {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        flex-direction: column;
     }
+    main > section {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    @media screen and (max-width: 640px) {
+        footer {
+        }
+    }
+
+    h3 {
+        flex-basis: 100%;
+    }
+
 
     p {
         font-weight: 300;
@@ -64,7 +182,7 @@ layout: blank
     }
     @media print {
         footer {
-            display: none;
+            /* display: none; */
         }
     }
 
@@ -88,6 +206,14 @@ layout: blank
         display: none;
         visibility: hidden;
     }
+    .reverse {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+    }
+
+    .crypticmail::after {
+        content: attr(data-name) '@' attr(data-domain) '.' attr(data-tld);
+    }
 
     aside#print {
         position: fixed;
@@ -95,97 +221,112 @@ layout: blank
         bottom: 2%;
     }
 
-    img#profile-pic {
-        float: right;
-        border-radius: 50px;
+    main > section > section {
+        flex-basis: 33%;
     }
-
-    address#contact-info {
-        font-size: 0.8rem;
-        font-style: normal;
+    main > section > section.skills {
+        flex-basis: 24%;
     }
-    address#contact-info dt,
-    address#contact-info dd {
-        display: inline-block;
-        vertical-align: middle;
+    main > section > section:only-of-type {
+        flex-basis: 99%;
     }
-    address#contact-info dt {
-        width: 64px;
-        font-size: 0.9em;
-        color: #7f7f7f;
+    @media screen and (max-width: 1024px) {
+        main > section > section {
+            flex-basis: 49%;
+        }
     }
-
-    dl.skills {
+    @media screen and (max-width: 640px) {
+        main > section > section {
+            flex-flow: column;
+            flex-basis: 99%;
+        }
     }
-    dl.skills dd {
+    section.skills dl dd {
         display: inline-block;
     }
-    dl.skills dd::after {
+    section.skills dl dd::after {
         content: ',';
     }
-    dl.skills dd:last {
+    section.skills dl dd:last-of-type::after {
         content: '';
-    }
-
-    #experience > div {
-    }
-    #experience > div + div {
-        margin-top: 20px;
     }
 
     dl.courses {
         font-size: 0.8rem;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    dl.courses dt {
+        flex-basis: 99%;
     }
     dl.courses dd.course {
-        display: inline-block;
-        width: 24%;
+        flex-basis: 24%;
     }
     @media all and (max-width: 1024px) {
         dl.courses dd.course {
-            width: 33%;
+            flex-basis: 33%;
         }
     }
     @media screen and (max-width: 768px) and not print {
         dl.courses dd.course {
-            width: 49%;
+            flex-basis: 49%;
         }
     }
     @media all and (max-width: 512px) {
         dl.courses dd.course {
-            width: 99%;
+            flex-basis: 99%;
         }
     }
-
-    .date {
-        float: right;
-    }
-
-    .close {
-        float: right;
-    }
 </style>
+
+<script type="text/javascript">
+    function mailOnClick(evt) {
+        window.location.href = [
+            'mailto:',
+            this.dataset.name,
+            '@',
+            this.dataset.domain,
+            '.',
+            this.dataset.tld,
+        ].join('');
+
+        evt.preventDefault();
+        return false;
+    }
+</script>
 
 <nav>
 </nav>
 
-<header unselectable="on">
+<header>
     <img id="profile-pic"
          src="/img/dmf/dmf-snowboarding-lens-flare.jpg"
          alt="Derek M. Frank snowboarding with lens flare"
          />
 
-    <h1>Derek M Frank</h1>
-    <h2>Software Engineer</h2>
-
     <address id="contact-info">
+        <h1>Derek M Frank</h1>
+        <h2>Software Engineer</h2>
         <dl>
             <div class="email">
                 <dt>Email</dt>
-                <dd><a href="mailto:resume@derekmfrank.com">resume {at} derekmfrank {dot} com</a></dd>
+                <dd><a href="mailto&#58;#"
+                       class="crypticmail"
+                       rel="nofollow"
+                       data-name="resume"
+                       data-domain="derekmfrank"
+                       data-tld="com"
+                       onclick="mailOnClick.apply(this, arguments)"
+                       ></a></dd>
             </div>
             <div class="link">
+                <dt>GitHub</dt>
+                <dd><a target="_blank"
+                    href="https://github.com/{{ site.github.owner_name }}">@{{ site.github.owner_name }}</a></dd>
+            <div>
+            <div class="link">
                 <dt>Website</dt>
-                <dd><a href="https://derekmfrank.com">derekmfrank.com</a></dd>
+                <dd><a href="https://derekmfrank.com">https://derekmfrank.com</a></dd>
             <div>
             </div class="geolocation">
                 <dt>Location</dt>
@@ -223,65 +364,160 @@ layout: blank
 
     <section id="skills">
         <h3>Skills</h3>
-        <dl id="technology-skills" class="skills">
-            <dt>Expert/Advanced</dt>
-            <dd>Python</dd>
-            <dd>Javascript</dd>
 
-            <dt>Proficient</dt>
-            <dd>SQL</dd>
-            <dd>Bash</dd>
-            <dd>Zsh</dd>
-            <dd>C</dd>
-            <dd>C++</dd>
-            <dd>Java</dd>
-            <dd>Common Lisp</dd>
-            <dd>Haskell</dd>
+        <section id="language-skills" class="skills">
+            <h4>Languages</h4>
+            <dl>
+                <div>
+                    <dt>Expert/Advanced</dt>
+                    <dd>Python</dd>
+                    <dd>Javascript</dd>
+                </div>
 
-            <dt>Prior experience</dt>
-            <dd>Prolog</dd>
-            <dd>Scheme</dd>
-            <dd>OCaml</dd>
-            <dd>Perl</dd>
-            <dd>Lua</dd>
-        </dl>
+                <div>
+                    <dt>Proficient</dt>
+                    <dd>SQL</dd>
+                    <dd>Bash</dd>
+                    <dd>Zsh</dd>
+                    <dd>C</dd>
+                    <dd>C++</dd>
+                    <dd>Java</dd>
+                    <dd>Common Lisp</dd>
+                    <dd>Haskell</dd>
+                </div>
+
+                <div>
+                    <dt>Prior experience</dt>
+                    <dd>Prolog</dd>
+                    <dd>Scheme</dd>
+                    <dd>OCaml</dd>
+                    <dd>Perl</dd>
+                    <dd>Lua</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section id="framework-skills" class="skills">
+            <h4>Libraries/Frameworks</h4>
+            <dl>
+                <div>
+                    <dt>Expert/Advanced</dt>
+                    <dd>Django</dd>
+                    <dd>JQuery</dd>
+                </div>
+
+                <div>
+                    <dt>Proficient</dt>
+                    <dd>BottlePy</dd>
+                    <dd>Jekyll</dd>
+                </div>
+
+                <div>
+                    <dt>Prior experience</dt>
+                    <dd>Backbone.js</dd>
+                    <dd>Require.js</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section id="technology-skills" class="skills">
+            <h4>Technologies</h4>
+            <dl>
+                <div>
+                    <dt>Expert/Advanced</dt>
+                    <dd>AWS</dd>
+                    <dd>Git</dd>
+                    <dd>Vim</dd>
+                    <dd>HTML5</dd>
+                    <dd>CSS3</dd>
+                    <dd>JSON</dd>
+                </div>
+
+                <div>
+                    <dt>Proficient</dt>
+                    <dd>MySQL/MariaDB</dd>
+                    <dd>SQLite</dd>
+                    <dd>Emacs</dd>
+                    <dd>XML</dd>
+                    <dd>REST</dd>
+                </div>
+
+                <div>
+                    <dt>Prior experience</dt>
+                    <dd>Octave</dd>
+                    <dd>Matlab</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section id="os-skills" class="skills">
+            <h4>Operating Systems</h4>
+            <dl>
+                <div>
+                    <dt>Expert/Advanced</dt>
+                    <dd>Linux</dd>
+                    <dd>MacOS</dd>
+                    <dd>BSD/Unix</dd>
+                    <dd>Android</dd>
+                </div>
+
+                <div>
+                    <dt>Proficient</dt>
+                    <dd>iOS</dd>
+                    <dd>Windows</dd>
+                </div>
+            </dl>
+        </section>
     </section>
 
     <section id="experience">
         <h3>Experience</h3>
-        <div class="job">
-            <div class="date"><time>2014</time> - Present</div>
+        <!-- Instead of listing responsibilities, show your impact in the role. -->
+
+        <section class="job">
             <h4>Programmer</h4>
+            <div class="date"><time>2014</time> - Present</div>
             <a href="http://www.readz.com/" target="_blank">Star Labs LTD - Readz, Woodland Hills, CA</a>
-        </div>
-        <div class="job">
-            <div class="date"><time>2013</time> - <time>2014</time></div>
+        </section>
+
+        <section class="job">
             <h4>Embedded Systems Test Engineer - Contractor</h4>
+            <div class="date"><time>2013</time> - <time>2014</time></div>
             <a href="http://www.medtronicdiabetes.com/home" target="_blank">Medtronic MiniMed, Northridge, CA</a>
-            
-        </div>
+        </section>
     </section>
 
     <section id="education">
         <h3>Education</h3>
-        <div class="school">
-            <div class="date"><time>2008</time> - <time>2012</time></div>
+        <section class="school">
             <h4>Bachelor of Science Degree, Computer Science</h4>
+            <div class="date"><time>2008</time> - <time>2012</time></div>
             <a href="http://soe.ucsc.edu/" target="_blank">University of California, Santa Cruz</a>
             <dl class="courses">
-                <dt>Relevant Courses</dt>
-                <dd class="course">Artificial Intelligence</dd>
-                <dd class="course">Operating Systems</dd>
-                <dd class="course">Fundamentals of Compiler Design</dd>
-                <dd class="course">Advanced Programming</dd>
-                <dd class="course">Computer Networks</dd>
-                <dd class="course">Computational Models</dd>
-                <dd class="course">Computer Architecture</dd>
-                <dd class="course">Computational Methods</dd>
-                <dd class="course">Comparative Programming Languages</dd>
-                <dd class="course"></dd>
+                <dt>Relevant Courses <a target="_blank"
+                    href="https://github.com/defrank/coursework#readme">(on GitHub)</a></dt>
+                <dd class="course"><a href="https://courses.soe.ucsc.edu/courses/cmps140/Winter12/01"
+                    target="_blank">Artificial Intelligence</a></dd>
+                <dd class="course"><a href="https://courses.soe.ucsc.edu/courses/cmps111/Spring12/01"
+                    target="_blank">Operating Systems</a></dd>
+                <dd class="course"><a href="https://courses.soe.ucsc.edu/courses/cmps104a/Fall11/01"
+                    target="_blank">Fundamentals of Compiler Design</a></dd>
+                <dd class="course"><a href="https://courses.soe.ucsc.edu/courses/cmps109/Winter11/01"
+                    target="_blank">Advanced Programming</a></dd>
+                <dd class="course"><a href="https://courses.soe.ucsc.edu/courses/cmpe150/Winter12/01"
+                    target="_blank">Computer Networks</a></dd>
+                <dd class="course"><a href="https://courses.soe.ucsc.edu/courses/cmps130/Fall11/01"
+                    target="_blank">Computational Models</a></dd>
+                <dd class="course"><a href="https://courses.soe.ucsc.edu/courses/cmpe110/Winter12/01"
+                    target="_blank">Computer Architecture</a></dd>
+                <dd class="course"><a href="https://courses.soe.ucsc.edu/courses/ams147/Winter10/01"
+                    target="_blank">Computational Methods</a></dd>
+                <dd class="course"><a href="https://courses.soe.ucsc.edu/courses/ams114/Winter11/01"
+                    target="_blank">Dynamical Systems</a></dd>
+                <dd class="course"><a href="https://courses.soe.ucsc.edu/courses/cmps112/Spring11/01"
+                    target="_blank">Comparative Programming Languages</a></dd>
             </dl>
-        </div>
+        </section>
     </section>
 
 </main>
