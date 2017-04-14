@@ -7,6 +7,7 @@ layout: blank
 
 <style scoped="scoped">
     * {
+        box-sizing: border-box;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
@@ -25,7 +26,10 @@ layout: blank
         font-size: 11pt;  /* keep between 10pt and 12pt */
         font-family: Lato, "Open Sans", Helvetica, Calibri, "PT Sans", Verdana, Arial, sans-serif;
     }
-    @media all and (max-width: 640px) {
+    main section + br {
+        display: none;
+    }
+    @media screen and (max-width: 640px) {
         body {
             margin: 20px;
             font-size: 10pt;
@@ -37,12 +41,15 @@ layout: blank
     @media print {
         body {
             max-width: 768px;
+            /* max-width: 670px; */
             margin: 40px 60px;
         }
 
         @page {
+            /*
             size: 8.5in 11in;
             margin: 0;
+             */
         }
         @-ms-viewport{
             width: 100%;
@@ -65,12 +72,10 @@ layout: blank
         * {
             -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
-            page-break-before: auto;
-            break-before: auto;
-            page-break-inside: auto;
-            break-inside: auto;
-            page-break-after: auto;
-            break-after: auto;
+        }
+        main * {
+            orphans: unset;
+            widows: 8;
         }
 
         /* Hide browser stuff. */
@@ -80,6 +85,34 @@ layout: blank
             visibility: collapse !important;
             width: 0 !important;
             height: 0 !important;
+        }
+
+        header,
+        footer,
+        section {
+            page-break-inside: avoid;
+            break-inside: avoid;
+                /*
+            page-break-before: avoid;
+            break-before: avoid;
+            page-break-after: avoid;
+            break-after: avoid;
+                */
+        }
+        section,
+        main > section,
+        main > section > section {
+            page-break-before: always;
+            break-before: always;
+            page-break-after: always;
+            break-after: always;
+        }
+        main section + br {
+            display: block;
+            page-break-before: always;
+            break-before: always;
+            page-break-after: always;
+            break-after: always;
         }
     } 
 
@@ -98,6 +131,10 @@ layout: blank
         order: 1;
     }
     img#profile-pic {
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
         border-radius: 8px;
     }
     address#contact-info {
@@ -149,8 +186,36 @@ layout: blank
         }
     }
 
+    h1,
+    h2 {
+        color: #3d3;
+    }
+    h1 {
+        margin: 12px 0;
+    }
+    h2 {
+        margin: 0;
+    }
     h3 {
         flex-basis: 100%;
+        font-size: 0.8rem;
+        color: #8e8e8e;
+        text-transform: uppercase;
+    }
+    h4 {
+        margin: 0;
+        font-size: 1.1rem;
+        color: #33d;
+    }
+
+    .organization,
+    .organization:visited {
+        font-size: 1em;
+        color: #3d3;
+    }
+    .date {
+        font-size: 0.8rem;
+        color: #aeaeae;
     }
 
 
@@ -223,19 +288,35 @@ layout: blank
 
     main > section > section {
         flex-basis: 33%;
+        padding: 0 8px;
     }
+    /*
+    main > section > section:nth-of-type(even) {
+        border-left-color: orange;
+        border-left-width: 1px;
+        border-left-style: solid;
+    }
+    */
     main > section > section.skills {
         flex-basis: 24%;
     }
-    main > section > section:only-of-type {
-        flex-basis: 99%;
+    main > section > section.job {
+        flex-basis: 49%;
     }
     @media screen and (max-width: 1024px) {
+        main > section > section.job,
+        main > section > section.skills,
         main > section > section {
             flex-basis: 49%;
         }
     }
-    @media screen and (max-width: 640px) {
+    main > section > section:only-of-type {
+        flex-flow: column;
+        flex-basis: 99%;
+    }
+    @media screen and (max-width: 640px)  {
+        main > section > section.job,
+        main > section > section.skills,
         main > section > section {
             flex-flow: column;
             flex-basis: 99%;
@@ -338,9 +419,17 @@ layout: blank
 
 <main>
     <section id="objective">
+        <h3>Objective</h3>
+        <p>Nihil et ipsum voluptatem deleniti nobis maiores aliquam. Ut corrupti quod qui in
+        vero architecto autem nam. Qui molestias repellat consequuntur necessitatibus magnam
+        earum qui. Minus est quae est sapiente ducimus. Eveniet tenetur unde maxime. Laborum
+        sapiente voluptas quia et minima animi.</p>
     </section>
 
+    <br clear="all" />
+
     <section id="summary">
+        <h3>Summary</h3>
         <p>
             I am a developer trying to remain pragmatic by continuing to learn and improve myself.  
 
@@ -357,10 +446,28 @@ layout: blank
 
             I <em>love</em> learning.
         </p>
-        <section id="notices">
+
+        <p>Nihil et ipsum voluptatem deleniti nobis maiores aliquam. Ut corrupti quod qui in
+        vero architecto autem nam. Qui molestias repellat consequuntur necessitatibus magnam
+        earum qui. Minus est quae est sapiente ducimus. Eveniet tenetur unde maxime. Laborum
+        sapiente voluptas quia et minima animi.</p>
+        <p>Est nisi exercitationem ipsa omnis laboriosam. Sit eveniet quasi dolores voluptas
+        voluptas. Adipisci eum qui distinctio et provident. Distinctio doloribus quos cumque sit
+        consequatur maiores. Quia illum quis laboriosam dolores id error illo rerum.
+        Eos at culpa corrupti sit. Repellat pariatur modi qui quasi et. Accusamus tempora
+        molestiae qui sit ab velit est aut.</p>
+        <p>In quia rem reiciendis accusantium. Eum quasi exercitationem quo et nam maxime quos
+        aliquid. Quas temporibus earum et quas explicabo. Blanditiis quod et consequuntur
+        id et. Vel harum accusantium est. Commodi eum praesentium voluptatem at.
+        Atque perferendis iusto non ratione. Possimus delectus quasi inventore ea
+        consequuntur velit eos. Similique ipsum occaecati quia ipsam eum.</p>
+
+        <p id="notices">
             <em id="recruiter-notice" class="notice">I do NOT work with 3rd party recruiters, period.</em>
-        </section>
+        </p>
     </section>
+
+    <br clear="all" />
 
     <section id="skills">
         <h3>Skills</h3>
@@ -470,29 +577,83 @@ layout: blank
         </section>
     </section>
 
+    <br clear="all" />
+
     <section id="experience">
         <h3>Experience</h3>
         <!-- Instead of listing responsibilities, show your impact in the role. -->
 
         <section class="job">
             <h4>Programmer</h4>
+            <a href="http://www.readz.com/"
+               class="organization"
+               target="_blank">Star Labs LTD - Readz, Woodland Hills, CA</a>
             <div class="date"><time>2014</time> - Present</div>
-            <a href="http://www.readz.com/" target="_blank">Star Labs LTD - Readz, Woodland Hills, CA</a>
+            <p>Nihil et ipsum voluptatem deleniti nobis maiores aliquam. Ut corrupti quod qui in
+            vero architecto autem nam. Qui molestias repellat consequuntur necessitatibus magnam
+            earum qui. Minus est quae est sapiente ducimus. Eveniet tenetur unde maxime. Laborum
+            sapiente voluptas quia et minima animi.</p>
+            <p>Est nisi exercitationem ipsa omnis laboriosam. Sit eveniet quasi dolores voluptas
+            voluptas. Adipisci eum qui distinctio et provident. Distinctio doloribus quos cumque sit
+            consequatur maiores. Quia illum quis laboriosam dolores id error illo rerum.
+            Eos at culpa corrupti sit. Repellat pariatur modi qui quasi et. Accusamus tempora
+            molestiae qui sit ab velit est aut.</p>
+            <p>In quia rem reiciendis accusantium. Eum quasi exercitationem quo et nam maxime quos
+            aliquid. Quas temporibus earum et quas explicabo. Blanditiis quod et consequuntur
+            id et. Vel harum accusantium est. Commodi eum praesentium voluptatem at.
+            Atque perferendis iusto non ratione. Possimus delectus quasi inventore ea
+            consequuntur velit eos. Similique ipsum occaecati quia ipsam eum.</p>
         </section>
+
+        <br clear="all" />
 
         <section class="job">
             <h4>Embedded Systems Test Engineer - Contractor</h4>
+            <a href="http://www.medtronicdiabetes.com/home"
+               class="organization"
+               target="_blank">Medtronic MiniMed, Northridge, CA</a>
             <div class="date"><time>2013</time> - <time>2014</time></div>
-            <a href="http://www.medtronicdiabetes.com/home" target="_blank">Medtronic MiniMed, Northridge, CA</a>
+            <p>Nihil et ipsum voluptatem deleniti nobis maiores aliquam. Ut corrupti quod qui in
+            vero architecto autem nam. Qui molestias repellat consequuntur necessitatibus magnam
+            earum qui. Minus est quae est sapiente ducimus. Eveniet tenetur unde maxime. Laborum
+            sapiente voluptas quia et minima animi.</p>
+            <p>Est nisi exercitationem ipsa omnis laboriosam. Sit eveniet quasi dolores voluptas
+            voluptas. Adipisci eum qui distinctio et provident. Distinctio doloribus quos cumque sit
+            consequatur maiores. Quia illum quis laboriosam dolores id error illo rerum.
+            Eos at culpa corrupti sit. Repellat pariatur modi qui quasi et. Accusamus tempora
+            molestiae qui sit ab velit est aut.</p>
+            <p>In quia rem reiciendis accusantium. Eum quasi exercitationem quo et nam maxime quos
+            aliquid. Quas temporibus earum et quas explicabo. Blanditiis quod et consequuntur
+            id et. Vel harum accusantium est. Commodi eum praesentium voluptatem at.
+            Atque perferendis iusto non ratione. Possimus delectus quasi inventore ea
+            consequuntur velit eos. Similique ipsum occaecati quia ipsam eum.</p>
         </section>
     </section>
+
+    <br clear="all" />
 
     <section id="education">
         <h3>Education</h3>
         <section class="school">
             <h4>Bachelor of Science Degree, Computer Science</h4>
+            <a href="http://soe.ucsc.edu/"
+               class="organization"
+               target="_blank">University of California, Santa Cruz</a>
             <div class="date"><time>2008</time> - <time>2012</time></div>
-            <a href="http://soe.ucsc.edu/" target="_blank">University of California, Santa Cruz</a>
+            <p>Nihil et ipsum voluptatem deleniti nobis maiores aliquam. Ut corrupti quod qui in
+            vero architecto autem nam. Qui molestias repellat consequuntur necessitatibus magnam
+            earum qui. Minus est quae est sapiente ducimus. Eveniet tenetur unde maxime. Laborum
+            sapiente voluptas quia et minima animi.</p>
+            <p>Est nisi exercitationem ipsa omnis laboriosam. Sit eveniet quasi dolores voluptas
+            voluptas. Adipisci eum qui distinctio et provident. Distinctio doloribus quos cumque sit
+            consequatur maiores. Quia illum quis laboriosam dolores id error illo rerum.
+            Eos at culpa corrupti sit. Repellat pariatur modi qui quasi et. Accusamus tempora
+            molestiae qui sit ab velit est aut.</p>
+            <p>In quia rem reiciendis accusantium. Eum quasi exercitationem quo et nam maxime quos
+            aliquid. Quas temporibus earum et quas explicabo. Blanditiis quod et consequuntur
+            id et. Vel harum accusantium est. Commodi eum praesentium voluptatem at.
+            Atque perferendis iusto non ratione. Possimus delectus quasi inventore ea
+            consequuntur velit eos. Similique ipsum occaecati quia ipsam eum.</p>
             <dl class="courses">
                 <dt>Relevant Courses <a target="_blank"
                     href="https://github.com/defrank/coursework#readme">(on GitHub)</a></dt>
