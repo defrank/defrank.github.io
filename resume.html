@@ -684,7 +684,9 @@ layout: blank
 </main>
 
 <footer>
-    <p>&#xa9; 2017 Derek M. Frank</p>
+    {% capture start_date %}2017{% endcapture %}
+    {% assign year = 'now' | date:'%Y' %}
+    <p>&#xa9;{{ start_date }}{% unless start_date == year %} - {{ 'now' | date:'%Y' }}{% endunless %} Derek M. Frank</p>
     <p><em>I do not authorize 3rd parties to alter this content or represent me.</em></p>
 </footer>
 
