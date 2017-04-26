@@ -373,6 +373,42 @@ layout: blank
         evt.preventDefault();
         return false;
     }
+
+    function onBeforePrint() {
+        Array.prototype.forEach.call(document.getElementsByClassName('crypticmail'), function (a) {
+            if (a.tagName.toLowerCase() === 'a') {
+                a.href = 'mailto:' + a.dataset.name + '@' + a.dataset.domain + '.' + a.dataset.tld;
+            }
+        });
+    }
+    function onAfterPrint() {
+        Array.prototype.forEach.call(document.getElementsByClassName('crypticmail'), function (a) {
+            if (a.tagName.toLowerCase() === 'a') {
+                a.href = 'mailto:#';
+            }
+        });
+    }
+
+    // webkit bindings
+    if (window.matchMedia || window.msMatchMedia) {
+        /*
+         * Credit:
+         *     http://tjvantoll.com/2012/06/15/detecting-print-requests-with-javascript/
+         *     http://www.danolsavsky.com/intercepting-print-requests-with-javascript/
+         */
+        (window.msMatchMedia || window.matchMedia)('print')
+            .addListener(function (mql) {
+                if (mql.matches) {
+                    onBeforePrint();
+                } else {
+                    setTimeout(onAfterPrint, 10);
+                }
+            })
+            ;
+    }
+    // moz/ie bindings
+    window.onbeforeprint = onBeforePrint;
+    window.onafterprint = onAfterPrint;
 </script>
 
 <nav>
