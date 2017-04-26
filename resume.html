@@ -100,30 +100,22 @@ layout: blank
 
         header,
         footer,
-        section {
+        section,
+        p,
+        dl,
+        dt,
+        dd {
             page-break-inside: avoid;
             break-inside: avoid;
-                /*
-            page-break-before: avoid;
-            break-before: avoid;
-            page-break-after: avoid;
-            break-after: avoid;
-                */
         }
-        section,
-        main > section,
-        main > section > section {
-            page-break-before: always;
-            break-before: always;
+        main > section {
             page-break-after: always;
             break-after: always;
         }
         main section + br {
-            display: block;
+            /* display: block; */
             page-break-before: always;
             break-before: always;
-            page-break-after: always;
-            break-after: always;
         }
     }
 
@@ -603,8 +595,6 @@ layout: blank
             <p>Increased bug awareness by configuring and adding logging mechanism to the server.
             Errors in request handling, spawned threads, and cronjobs are emailed to developers.</p>
         </section>
-
-        <br clear="all" />
 
         <section class="job">
             <h4>Embedded Systems Test Engineer - Contractor</h4>
