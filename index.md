@@ -6,6 +6,7 @@ layout: default
 ## Table of Contents
 
 * [About me]({% link about.md %})
+* [Resume]({% link resume.html %})
 
 ## Links directory
 * [GitHub][gh-repo]
