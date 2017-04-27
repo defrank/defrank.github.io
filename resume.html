@@ -293,9 +293,13 @@ layout: blank
     dt::after {
         content: ':';
     }
-    section dt {
-        margin: 0.25rem 0;
+    section dt:not(:first-of-type) {
+        margin-top: 0.5rem;
     }
+    section dl > div:not(:first-of-type) {
+        margin-top: 0.5rem;
+    }
+
 
     footer {
         text-align: center;
