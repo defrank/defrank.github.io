@@ -140,23 +140,23 @@ layout: blank
     header > address {
         order: 1;
     }
-    img#profile-pic {
+    header img {
         -webkit-border-radius: 8px;
         -moz-border-radius: 8px;
         -ms-border-radius: 8px;
         -o-border-radius: 8px;
         border-radius: 8px;
     }
-    address#contact-info {
+    address {
         font-style: normal;
     }
-    address#contact-info dt,
-    address#contact-info dd {
+    address dt,
+    address dd {
         display: inline-block;
         vertical-align: middle;
         font-size: 0.9rem;
     }
-    address#contact-info dt {
+    address dt {
         width: 64px;
         color: #FD6F6B;
     }
@@ -238,6 +238,7 @@ layout: blank
 
     dt,
     dd {
+        margin: 0;
         font-size: 0.8rem;
     }
     dt {
@@ -245,9 +246,6 @@ layout: blank
     }
     dt::after {
         content: ':';
-    }
-    dd {
-        margin: 0;
     }
 
     footer {
