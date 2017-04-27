@@ -43,6 +43,10 @@ layout: blank
     main section + br {
         display: none;
     }
+    @media screen and (max-width: 320px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
     @media screen and (max-width: 640px) {
         html,
         body {
@@ -53,6 +57,24 @@ layout: blank
         }
 
         h1, h2, h3, h4, h5, h6 {
+        }
+    }
+    @media screen and (min-width: 1280px) {
+        body {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+    @media screen and (min-width: 1600px) {
+        body {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+    }
+    @media screen and (min-width: 1920px) {
+        body {
+            margin-left: 20%;
+            margin-right: 20%;
         }
     }
     @media print {
