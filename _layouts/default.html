@@ -6,21 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include meta_robots.html %}
 
-    <meta name="description" content="{{ site.description | default: site.github.project_tagline }}">
-    {% if site.author %}
-        <meta name="author" content="{{ site.author }}">
-        <meta name="creator" content="{{ site.creator | default: site.author }}">
-        <meta name="publisher" content="{{ site.publisher | default: site.author }}">
-    {% endif %}
-
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    {% include meta_author.html %}
+    {% seo title=false %}
 
     <script>{% include cookies.js %}</script>
 
     {% include analytics.html %}
-    {% seo %}
 
     {% include shims.html %}
   </head>

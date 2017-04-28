@@ -8,6 +8,8 @@
 
     <link rel="shortcut icon" href="/favicon.ico">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    {% include meta_author.html %}
+    {% seo title=false %}
 
     {% include shims.html %}
   </head>

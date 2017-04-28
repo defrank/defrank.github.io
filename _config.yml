@@ -13,22 +13,50 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-author: Derek M. Frank
-name: Derek M. Frank
+name: Derek Michael Frank
 title: Derek M Frank
 description: >  # this means to ignore newlines until "baseurl:"
     Los Angeles pragmatic software developer.
 baseurl: ""  # the subpath of your site, e.g. /blog
 url: "https://derekmfrank.com"  # the base hostname & protocol for your site, e.g. http://example.com
 
-google_analytics: UA-39564024-2
-bitbucket_username: deerex
-linkedin_username: derekmfrank
-instagram_username: __dmf__
-goodreads_username: dmfrank
-lastfm_username: derekmfrank
-facebook_username: derekmfrank
-googleplus_id: 110520366075871893334
+# SEO
+logo:
+author:
+    name: Derek Michael Frank
+    twitter: derekmfrank
+google_site_verification: google0a2e75908547fa0e.html
+
+# Social
+keybase:
+    username: dmf
+twitter:
+    username: derekmfrank
+facebook:
+    username: derekmfrank
+google:
+    analytics: UA-39564024-2
+    plus_id: 110520366075871893334
+bitbucket:
+    username: deerex
+linkedin:
+    username: derekmfrank
+instagram:
+    username: __dmf__
+goodreads:
+    username: dmfrank
+lastfm:
+    username: derekmfrank
+social:
+    links:
+        - https://keybase.io/dmf
+        - https://github.com/defrank
+        - https://bitbucket.org/deerex
+        - https://twitter.com/derekmfrank
+        - https://www.linkedin.com/in/derekmfrank
+        - https://www.instagram.com/__dmf__
+        - https://goodreads.com/derekmfrank
+        - https://www.last.fm/user/derekmfrank
 
 # Build settings
 permalink: pretty
