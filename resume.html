@@ -55,8 +55,9 @@ layout: blank
         font-weight: 300;
         margin: 40px;
     }
-    main section + br {
+    .page-break {
         display: none;
+        clear: both;
     }
     @media screen and (max-width: 319px) {
         margin-left: 2%;
@@ -156,8 +157,8 @@ layout: blank
             page-break-after: always;
             break-after: always;
         }
-        main section + br {
-            /* display: block; */
+        .page-break {
+            display: block;
             page-break-before: always;
             break-before: always;
         }
@@ -543,7 +544,7 @@ layout: blank
         <p>Seeking remote-only, challenging opportunities in software and web development.</p>
     </section>
 
-    <br clear="all" />
+    <div class="page-break"></div>
 
     <section id="summary">
         <h3>Summary</h3>
@@ -558,7 +559,7 @@ layout: blank
         </p>
     </section>
 
-    <br clear="all" />
+    <div class="page-break"></div>
 
     <section id="skills">
         <h3>Skills</h3>
@@ -668,7 +669,7 @@ layout: blank
         </section>
     </section>
 
-    <br clear="all" />
+    <div class="page-break"></div>
 
     <section id="experience">
         <h3>Experience</h3>
@@ -708,7 +709,7 @@ layout: blank
         </section>
     </section>
 
-    <br clear="all" />
+    <div class="page-break"></div>
 
     <section id="education">
         <h3>Education</h3>
