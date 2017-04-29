@@ -1,0 +1,5 @@
+{% if site.author.name %}
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="creator" content="{{ site.creator | default: site.author.name }}">
+    <meta name="publisher" content="{{ site.publisher | default: site.author.name }}">
+{% endif %}
