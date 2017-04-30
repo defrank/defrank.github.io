@@ -3,7 +3,95 @@ title: Resume
 layout: blank
 ---
 
-<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900" rel="stylesheet">
+<noscript id="deferred-styles">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900" rel="stylesheet">
+</noscript>
+<script type="text/javascript">
+    /**** Global scope ****/
+    function mailOnClick(evt) {
+        window.location.href = [
+            'mailto:',
+            this.dataset.name,
+            '@',
+            this.dataset.domain,
+            '.',
+            this.dataset.tld,
+        ].join('');
+
+        evt.preventDefault();
+        return false;
+    }
+
+    /**** Local scope ****/
+    (function (window, document) {
+        // Load external CSS async.
+        function loadDeferredStyles () {
+            // Get #deferred-style node.
+            var deferredStylesNode = document.getElementById('deferred-styles');
+            // Render deferred styles and append to head.
+            var temp = document.createElement('div');
+            temp.innerHTML = deferredStylesNode.textContent.trim();
+            temp.childNodes.forEach(function (node) {
+                document.head.appendChild(node);
+            });
+            // Remove #deferred-styles node from DOM.
+            deferredStylesNode.parentElement.removeChild(deferredStylesNode);
+        }
+
+        var raf = requestAnimationFrame
+            || webkitRequestAnimationFrame
+            || mozRequestAnimationFrame
+            || msRequestAnimationFrame
+            ;
+
+        if (raf) {
+            raf(function () {
+                window.setTimeout(loadDeferredStyles, 0);
+            });
+        } else {
+            window.addEventListener('load', loadDeferredStyles);
+        }
+
+
+        // Set up onprint handlers.
+        function onBeforePrint() {
+            Array.prototype.forEach.call(document.getElementsByClassName('crypticmail'), function (a) {
+                if (a.tagName.toLowerCase() === 'a') {
+                    a.href = 'mailto:' + a.dataset.name + '@' + a.dataset.domain + '.' + a.dataset.tld;
+                }
+            });
+        }
+        function onAfterPrint() {
+            Array.prototype.forEach.call(document.getElementsByClassName('crypticmail'), function (a) {
+                if (a.tagName.toLowerCase() === 'a') {
+                    a.href = 'mailto:#';
+                }
+            });
+        }
+
+        // webkit bindings
+        var mm = window.matchMedia || window.msMatchMedia;
+        if (mm) {
+            /*
+             * Credit:
+             *     http://tjvantoll.com/2012/06/15/detecting-print-requests-with-javascript/
+             *     http://www.danolsavsky.com/intercepting-print-requests-with-javascript/
+             */
+            mm('print')
+                .addListener(function (mql) {
+                    if (mql.matches) {
+                        onBeforePrint();
+                    } else {
+                        setTimeout(onAfterPrint, 10);
+                    }
+                })
+                ;
+        }
+        // moz/ie bindings
+        window.onbeforeprint = onBeforePrint;
+        window.onafterprint = onAfterPrint;
+    })(window, document)
+</script>
 
 <style scoped="scoped">
     /*
@@ -455,58 +543,6 @@ layout: blank
         }
     }
 </style>
-
-<script type="text/javascript">
-    function mailOnClick(evt) {
-        window.location.href = [
-            'mailto:',
-            this.dataset.name,
-            '@',
-            this.dataset.domain,
-            '.',
-            this.dataset.tld,
-        ].join('');
-
-        evt.preventDefault();
-        return false;
-    }
-
-    function onBeforePrint() {
-        Array.prototype.forEach.call(document.getElementsByClassName('crypticmail'), function (a) {
-            if (a.tagName.toLowerCase() === 'a') {
-                a.href = 'mailto:' + a.dataset.name + '@' + a.dataset.domain + '.' + a.dataset.tld;
-            }
-        });
-    }
-    function onAfterPrint() {
-        Array.prototype.forEach.call(document.getElementsByClassName('crypticmail'), function (a) {
-            if (a.tagName.toLowerCase() === 'a') {
-                a.href = 'mailto:#';
-            }
-        });
-    }
-
-    // webkit bindings
-    if (window.matchMedia || window.msMatchMedia) {
-        /*
-         * Credit:
-         *     http://tjvantoll.com/2012/06/15/detecting-print-requests-with-javascript/
-         *     http://www.danolsavsky.com/intercepting-print-requests-with-javascript/
-         */
-        (window.msMatchMedia || window.matchMedia)('print')
-            .addListener(function (mql) {
-                if (mql.matches) {
-                    onBeforePrint();
-                } else {
-                    setTimeout(onAfterPrint, 10);
-                }
-            })
-            ;
-    }
-    // moz/ie bindings
-    window.onbeforeprint = onBeforePrint;
-    window.onafterprint = onAfterPrint;
-</script>
 
 <nav>
 </nav>
