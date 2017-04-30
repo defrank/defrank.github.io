@@ -46,4 +46,4 @@ layout: default
 ## Pets
 
 I have two crazy, smart, and silly blue heelers, Kira and Dino.
-![kira rolling eyes at dee and dino](/img/pet/kira-rolling-eyes-dee-and-dino.jpeg)
+![kira rolling eyes at dee and dino](/assets/img/pet/kira-rolling-eyes-dee-and-dino.jpeg)
