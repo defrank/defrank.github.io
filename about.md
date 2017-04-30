@@ -45,5 +45,8 @@ layout: default
 
 ## Pets
 
+{% assign image = site.static_files | where: "basename", "kira-rolling-eyes-dee-and-dino" | first %}
+{% assign timestamp = image.modified_time | date: "%s" %}
+
 I have two crazy, smart, and silly blue heelers, Kira and Dino.
-![kira rolling eyes at dee and dino](/assets/img/kira-rolling-eyes-dee-and-dino.jpeg)
+![{{ image.basename | split: "-" | join: " " }}]({{ image.path }}?v={{ timestamp }})

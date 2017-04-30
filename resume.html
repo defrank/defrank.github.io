@@ -548,9 +548,12 @@ layout: blank
 </nav>
 
 <header>
+    {% assign image = site.static_files | where: "basename", "dmf-snowboarding-lens-flare" | first %}
+    {% assign timestamp = image.modified_time | date: "%s" %}
+
     <img id="profile-pic"
-         src="/assets/img/dmf-snowboarding-lens-flare.jpg"
-         alt="Derek M. Frank snowboarding with lens flare"
+         src="{{ image.path }}?v={{ timestamp }}"
+         alt="Derek M. Frank {{ image.basename | remove_first: "dmf-" | split: "-" | join: " " }}"
          />
 
     <address id="contact-info">
