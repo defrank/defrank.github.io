@@ -381,16 +381,16 @@ layout: blank
     main > section > section.job {
         flex-basis: 49%;
     }
+    main > section > section:only-of-type {
+        flex-flow: column;
+        flex-basis: 99%;
+    }
     @media screen and (max-width: 1023px) {
         main > section > section.job,
         main > section > section.skills,
         main > section > section {
             flex-basis: 49%;
         }
-    }
-    main > section > section:only-of-type {
-        flex-flow: column;
-        flex-basis: 99%;
     }
     @media screen and (max-width: 599px)  {
         main > section > section.job,
