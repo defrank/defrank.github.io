@@ -10,8 +10,13 @@ layout: default
 <dl>
     <dt>Occupation</dt>
     <dd>Software Engineer</dd>
+
     <dt>Location</dt>
-    <dd>Los Angeles, CA</dd>
+    <dd>Chatsworth, CA (Greater Los Angeles)</dd>
+
+    <dt>Education</dt>
+    <dd>UCSC: Computer Science, Bachelor of Science</dd>
+    <dd>Venice High School</dd>
 </dl>
 
 ### Hobbies
@@ -19,7 +24,8 @@ layout: default
 * Learning
 * Reading and listening to audiobooks
 * Snowboarding
-* Weight lifting
+* Powerlifting (PRs in lbs: deadlift=420, squat=360, bench=325,
+  press=205)
 * Dog training.
 
 ### Favorites
