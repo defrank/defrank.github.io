@@ -6,6 +6,7 @@ layout: default
 ## Table of Contents
 
 * [About me]({% link about.md %})
+* [Portfolio]({% link portfolio.md %})
 * [Resume]({% link resume.html %})
 
 ## Links directory
