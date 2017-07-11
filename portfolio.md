@@ -39,7 +39,7 @@ Chose complimentary color palette.  Creatively styled call-to-actions
 so as not to conflict with color palette and chosen font weights.
 
 #### Technology
-* [GitHub Pagse][gh-pages]
+* [GitHub Pages][gh-pages]
 * [Jekyll][jekyll]
 * [Cloudflare][cloudflare]
 
