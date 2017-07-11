@@ -28,7 +28,7 @@ new clients to be plugged in easily.
 ----
 ### Personal Website
 
-| [derekmfrank.com][personal-website] | 2017 | [Repository][personal-website-repo] |
+| [derekmfrank.com][personal-website] | 2017 | [GitHub Repository][personal-website-repo] |
 
 #### Description
 
