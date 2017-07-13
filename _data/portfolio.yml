@@ -1,0 +1,74 @@
+- title: "News Slackbot"
+  year: 2017
+  url: "https://derekmfrank.com/newsbot"
+  image:
+      name: "Newsbot example"
+      url: "/assets/img/newsbot-example.png"
+  repository:
+      name: "GitHub"
+      url: "https://github.com/defrank/newsbot"
+  description: |
+      A Slackbot that fetches news articles and delivers them to any
+      number of Slack channels that the bot is subscribed to.
+
+      Currently only Twitter is used to fetch articles, but the bot was
+      designed to allow new clients to be plugged in easily.
+  technologies:
+      - "Python 3.6"
+      - "Docker"
+      - "Slack RTM API"
+
+- title: "Personal Website"
+  year: 2017
+  url: "https://derekmfrank.com/"
+  image:
+      name:
+      url:
+  repository:
+      name: "GitHub"
+      url: "https://github.com/defrank/defrank.github.io"
+  description: |
+      Incorporated CDN, Cloudflare, to reduce load, improve response
+      times, and freely serve over HTTPS.
+
+      Chose complimentary color palette.  Creatively styled
+      call-to-actions so as not to conflict with color palette and
+      chosen font weights.
+  technologies:
+      - "GitHub Pages"
+      - "Jekyll"
+      - "Cloudflare"
+
+- title: "Link Crawler"
+  year: 2015
+  url:
+  image:
+      name:
+      url:
+  repository:
+      name: "GitHub"
+      url: "https://github.com/defrank/LinkCrawler"
+  description: |
+      A crawler to count links of a specific type.  The goal was to be
+      able to determine how many PDFs were hosted on a given domain.
+  technologies:
+      - "Python 2.7"
+      - "Scrapy"
+
+- title: "Old Personal Website"
+  year: 2013
+  url:
+  image:
+      name:
+      url:
+  repository:
+      name: "GitHub"
+      url: "https://github.com/defrank/old-personal-website"
+  description: |
+      First personal website deployed with a shared virtual server.
+  technologies:
+      - "Python 2.6"
+      - "Django 1.5"
+      - "SQLite 3"
+      - "Apache 2"
+      - "DreamHost"

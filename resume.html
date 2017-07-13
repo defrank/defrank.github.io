@@ -735,62 +735,22 @@ layout: blank
     <section id="portfolio">
         <h3><a href="https://derekmfrank.com/portfolio/">Portfolio</a></h3>
 
-        <section class="project">
-            <h4>News Slackbot</h4>
-            <a class="creative-work" href="https://derekmfrank.com/newsbot">derekmfrank.com/newsbot</a>
-            <div class="metadata"><time>2017</time> - Present | <a target="_blank"
-                href="{{ site.github.owner_url }}/newsbot">GitHub Repository</a></div>
-
-            <p>Built with
-            <a target="_blank" href="https://docs.python.org/3.6/">Python 3.6</a>,
-            <a target="_blank" href="https://docs.docker.com/">Docker</a>, and
-            <a target="_blank" href="https://api.slack.com/rtm">Slack RTM API</a>.</p>
-            <p>A Slackbot that fetches news articles and delivers them to any number of Slack
-            channels that the bot is subscribed to.</p>
-            <p>Currently only Twitter is used to fetch articles, but the bot was designed to allow
-            new clients to be plugged in easily.</p>
-        </section>
-
-        <section class="project">
-            <h4>Personal Website</h4>
-            <a class="creative-work" href="https://derekmfrank.com/">derekmfrank.com</a>
-            <div class="metadata"><time>2017</time> - Present | <a target="_blank"
-                href="{{ site.github.repository_url }}">GitHub Repository<a></div>
-
-            <p>Built with <a target="_blank" href="https://pages.github.com/">GitHub Pages</a> using
-            <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.</p>
-            <p>Incorporated CDN, <a target="_blank" href="https://www.cloudflare.com/">Cloudflare</a>,
-            to reduce load, improve response times, and freely serve over HTTPS.</p>
-            <p>Created responsive resumé using CSS3 Flexbox.  Chose complimentary color palette.
-            Creatively styled call-to-actions so as not to conflict with color palette and chosen
-            font weights.</p>
-        </section>
-
-        <section class="project">
-            <h4>Link Crawler</h4>
-            <div class="metadata"><time>2015</time> | <a target="_blank"
-                href="{{ site.github.owner_url }}/LinkCrawler">GitHub Repository</a></div>
-
-            <p>Built with
-            <a target="_blank" href="https://docs.python.org/2.7/">Python 2.7</a>
-            and <a target="_blank" href="https://scrapy.org/">Scrapy</a>.</p>
-            <p>A crawler to count links of a specific type.  The goal was to be able to determine
-            how many PDFs were hosted on a given domain.</p>
-        </section>
-
-        <section class="project">
-            <h4>Old Personal Website</h4>
-            <div class="metadata"><time>2013</time> | <a target="_blank"
-                href="{{ site.github.owner_url }}/old-personal-website">GitHub Repository</a></div>
-
-            <p>Learned to build a website with
-            <a target="_blank" href="https://docs.python.org/2.6/">Python 2.6</a>,
-            <a target="_blank" href="https://www.djangoproject.com/">Django 1.5</a>,
-            <a target="_blank" href="https://sqlite.org/">SQLite 3</a>,
-            and <a target="_blank" href="https://httpd.apache.org/">Apache 2</a>.</p>
-            <p>Learned to host a website on
-            <a target="_blank" href="https://www.dreamhost.com/">DreamHost</a>.</p>
-        </section>
+        {% for proj in site.data.portfolio %}
+            <section class="project">
+                <h4>{{ proj.title }}</h4>
+                {% if proj.url %}
+                    <a class="creative-work" href="{{ proj.url }}">{{ proj.url }}</a>
+                {% endif %}
+                <div class="metadata">
+                    <time>{{ proj.year }}</time>
+                    {% if proj.repository.url %}
+                        | <a target="_blank"
+                             href="{{ proj.repository.url }}">{{ proj.repository.name }} Repository</a>
+                    {% endif %}
+                </div>
+                <p>{{ proj.description }}</p>
+            </section>
+        {% endfor %}
     </section>
 
     <section id="experience">
