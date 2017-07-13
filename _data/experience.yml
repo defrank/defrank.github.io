@@ -3,12 +3,14 @@
   type: "full-time"
   city: "Woodland Hills"
   state: "CA"
-  start_year: 2014
-  start_month: 2  # February
-  start_day: 17
-  end_year:
-  end_month: 7  # July
-  end_day: 24
+  start:
+      year: 2014
+      month: 2  # February
+      day: 17
+  end:
+      year:
+      month: 7  # July
+      day: 24
   website: "https://www.readz.com/"
   description: >
       Readz is a website creation platform similar to Wix.  Built for
@@ -63,12 +65,14 @@
   type: "contract"
   city: "Northridge"
   state: "CA"
-  start_year: 2013
-  start_month: 8  # August
-  start_day:
-  end_year: 2014
-  end_month: 2  # February
-  end_day: 14
+  start:
+      year: 2013
+      month: 8  # August
+      day:
+  end:
+      year: 2014
+      month: 2  # February
+      day: 14
   website: "http://www.medtronicdiabetes.com/home"
   description: >
       Medtronic MiniMed is a diabetes medical devices innovator.  They

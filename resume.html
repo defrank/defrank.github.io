@@ -805,8 +805,8 @@ layout: blank
                    target="_blank">{{ exp.organization }}</a>
                 <div class="metadata">
                     {{ exp.type|capitalize }}
-                    | <time>{{ exp.start_year }}</time>
-                    - <time>{{ exp.end_year|default:"Present" }}</time>
+                    | <time>{{ exp.start.year }}</time>
+                    - <time>{{ exp.end.year|default:"Present" }}</time>
                     | {{ exp.city }}, {{ exp.state }}
                 </div>
                 {% for resp in exp.responsibilities %}
