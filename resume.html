@@ -757,7 +757,7 @@ layout: blank
             <section class="project">
                 <h4>{{ proj.title }}</h4>
                 {% if proj.url %}
-                    <a class="creative-work" href="{{ proj.url }}">{{ proj.url }}</a>
+                    <a class="creative-work" href="{{ proj.url }}">{{ proj.url|remove_first:"https://"|remove_first:"http://" }}</a>
                 {% endif %}
                 <div class="metadata">
                     <time>{{ proj.year }}</time>
