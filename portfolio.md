@@ -3,7 +3,8 @@ title: Portfolio
 layout: default
 ---
 
-## Portfolio
+Portfolio
+---------
 
 {% for proj in site.data.portfolio %}
 ### {% if proj.url %}[{{ proj.title }}]({{proj.url}}){% else %}{{ proj.title }}{% endif %}
