@@ -800,9 +800,9 @@ layout: blank
         {% for exp in site.data.experience %}
             <section class="job">
                 <h4>{{ exp.title }}</h4>
-                <a href="{{ exp.website }}"
+                <a href="{{ exp.organization.url }}"
                    class="organization"
-                   target="_blank">{{ exp.organization }}</a>
+                   target="_blank">{{ exp.organization.name }}</a>
                 <div class="metadata">
                     {{ exp.type|capitalize }}
                     | <time>{{ exp.start.year }}</time>
