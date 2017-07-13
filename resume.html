@@ -766,12 +766,12 @@ layout: blank
                              href="{{ proj.repository.url }}">{{ proj.repository.name }} Repository</a>
                     {% endif %}
                 </div>
+                <p>{{ proj.description }}</p>
                 <ul class="tags">
                     {% for tech in proj.technologies %}
                         <li>{{ tech }}</li>
                     {% endfor %}
                 </ul>
-                <p>{{ proj.description }}</p>
             </section>
         {% endfor %}
     </section>
@@ -792,14 +792,14 @@ layout: blank
                     - <time>{{ exp.end.year|default:"Present" }}</time>
                     | {{ exp.city }}, {{ exp.state }}
                 </div>
+                {% for resp in exp.responsibilities %}
+                    <p>{{ resp }}</p>
+                {% endfor %}
                 <ul class="tags">
                     {% for tech in exp.technologies %}
                         <li>{{ tech }}</li>
                     {% endfor %}
                 </ul>
-                {% for resp in exp.responsibilities %}
-                    <p>{{ resp }}</p>
-                {% endfor %}
             </section>
         {% endfor %}
     </section>
