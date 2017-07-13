@@ -1,0 +1,76 @@
+- organization: "Star Labs LTD - Readz"
+  title: "Programmer"
+  type: "full-time"
+  city: "Woodland Hills"
+  state: "CA"
+  start_year: 2014
+  start_month: 2  # February
+  start_day: 17
+  end_year:
+  end_month: 7  # July
+  end_day: 24
+  website: "https://www.readz.com/"
+  description: Readz is a website creation platform similar to Wix.  Built for designers that do
+      not want templates, but the freedom to build anything they want an absolutely positioned,
+      drag-and-drop, WYSIWYG editor.
+  role: Full-stack software development with a focus on infrastructure and internal tools.
+  technologies:
+      - "Python 2.7"
+      - "Django 1.8"
+      - "Javascript"
+      - "HTML5"
+      - "CSS3"
+      - "MySQL"
+      - "Apache 2"
+      - "Git"
+      - "AWS"
+      - "Akamai"
+      - "BottlePy"
+      - "SQLite 3"
+      - "PhantomJS"
+      - "Bash"
+      - "Linux"
+  responsibilities:
+      - Streamlined testing environments by creating a server that pulls new code from GitHub to
+        create new hosts.  Included a web interface for specifying Git branches to watch.
+      - Improved pre-release bug detection of customer content by building an application with
+        PhantomJS2 to compare production content with current the development version.
+      - This reduced QA time spent verifying hundreds of customer websites every sprint (i.e.,
+        two weeks).
+      - Improved quality assurance by adding unit tests to the codebase.  Added functionality to
+        the previously mentioned test server to fail if unit tests fail.
+      - Designed and implemented API wrapper for easily automating updating configuration to the
+        Akamai CDN using their
+        <a href="https://developer.akamai.com/api/luna/papi/overview.html" target="_blank">
+        Property Manager API</a>.
+      - Increased bug awareness by configuring and adding logging mechanism to the server.  Errors
+        in request handling, spawned threads, and cronjobs are emailed to developers.
+
+- organization: "Medtronic MiniMed"
+  title: "Embedded Systems Test Engineer"
+  type: "contract"
+  city: "Northridge"
+  state: "CA"
+  start_year: 2013
+  start_month: 8  # August
+  start_day:
+  end_year: 2014
+  end_month: 2  # February
+  end_day: 14
+  website: "http://www.medtronicdiabetes.com/home"
+  description: Medtronic MiniMed is a diabetes medical devices innovator.  They specialize in
+      glucose sensor and monitoring as well as an insulin delivery pump.
+  role: Development, planning and validation of internal tools used to validate product
+      requirements in a FCC regulated and waterfall development cycle environment.
+  technologies:
+      - "Python 2.7"
+      - "Javascript"
+  responsibilities:
+      - Designed, developed, validated, and documented iOS test automation framework and API in
+        Javascript, Python, and Qt4.
+      - Designed, developed, tested, and validated tools using Python to automate testing and
+        interacting with Diabetes-related embedded devices.
+      - Analyzed requirements, designed test cases, created and debugged automated test scripts,
+        and documented work per Medical Standard IEC62304.
+      - Wrote intended use validation test plans based on product requirements, executed validation
+        tests, and documented results to ensure product meets intended use.

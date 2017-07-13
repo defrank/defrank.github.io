@@ -797,42 +797,23 @@ layout: blank
         <h3>Experience</h3>
         <!-- Instead of listing responsibilities, show your impact in the role. -->
 
-        <section class="job">
-            <h4>Programmer</h4>
-            <a href="http://www.readz.com/"
-               class="organization"
-               target="_blank">Star Labs LTD - Readz</a>
-            <div class="metadata"><time>2014</time> - Present | Woodland Hills, CA</div>
-            <p>Streamlined testing environments by creating a server that pulls new code from GitHub
-            to create new hosts.  Included a web interface for specifying Git branches to watch.</p>
-            <p>Improved pre-release bug detection of customer content by building an application
-            with PhantomJS2 to compare production content with current the development version.
-            This reduced QA time spent verifying hundreds of customer websites every sprint
-            (i.e., two weeks).</p>
-            <p>Improved quality assurance by adding unit tests to the codebase.  Added functionality
-            to the previously mentioned test server to fail if unit tests fail.</p>
-            <p>Designed and implemented API wrapper for easily automating updating configuration to
-            the Akamai CDN using their <a href="https://developer.akamai.com/api/luna/papi/overview.html"
-            target="_blank">Property Manager API</a>.</p>
-            <p>Increased bug awareness by configuring and adding logging mechanism to the server.
-            Errors in request handling, spawned threads, and cronjobs are emailed to developers.</p>
-        </section>
-
-        <section class="job">
-            <h4>Embedded Systems Test Engineer</h4>
-            <a href="http://www.medtronicdiabetes.com/home"
-               class="organization"
-               target="_blank">Medtronic MiniMed</a>
-            <div class="metadata">Contractor | <time>2013</time> - <time>2014</time> | Northridge, CA</div>
-            <p>Designed, developed, validated, and documented iOS test automation framework and API
-            in Javascript, Python, and Qt4.</p>
-            <p>Designed, developed, tested, and validated tools using Python to automate testing and
-            interacting with Diabetes-related embedded devices.</p>
-            <p>Analyzed requirements, designed test cases, created and debugged automated test
-            scripts, and documented work per Medical Standard IEC62304.</p>
-            <p>Wrote intended use validation test plans based on product requirements, executed
-            validation tests, and documented results to ensure product meets intended use.</p>
-        </section>
+        {% for exp in site.data.experience %}
+            <section class="job">
+                <h4>{{ exp.title }}</h4>
+                <a href="{{ exp.website }}"
+                   class="organization"
+                   target="_blank">{{ exp.organization }}</a>
+                <div class="metadata">
+                    {{ exp.type|capitalize }}
+                    | <time>{{ exp.start_year }}</time>
+                    - <time>{{ exp.end_year|default:"Present" }}</time>
+                    | {{ exp.city }}, {{ exp.state }}
+                </div>
+                {% for resp in exp.responsibilities %}
+                    <p>{{ resp }}</p>
+                {% endfor %}
+            </section>
+        {% endfor %}
     </section>
 
     <div class="page-break"></div>
