@@ -35,8 +35,12 @@
       call-to-actions so as not to conflict with color palette and
       chosen font weights.
   technologies:
-      - "GitHub Pages"
       - "Jekyll"
+      - "HTML5"
+      - "CSS3"
+      - "SASS"
+      - "Markdown"
+      - "GitHub Pages"
       - "Cloudflare"
 
 - title: "Link Crawler"
