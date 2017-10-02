@@ -1,4 +1,45 @@
 - organization:
+      name: "FanAI"
+      url: "http://fanai.io/"
+      description: >
+          FanAI is an AI-driven Audience Monetization platform focusing
+          first on eSports, and their sponsor ecosystems, increasing
+          franchise and sponsorship revenues by making their audience
+          data actionable.
+  title: "Backend Developer"
+  type: "full-time"
+  city: "Santa Monica"
+  state: "CA"
+  start:
+      year: 2017
+      month: 7  # July
+      day: 31
+  end:
+      year:
+      month:
+      day:
+  role: >
+      Backend software development with a focus on infrastructure.
+  technologies:
+      - "Python 3.6"
+      - "Flask"
+      - "MongoDB"
+      - "RabbitMQ"
+      - "Git"
+      - "Google Cloud Platform"
+      - "Docker"
+      - "Docker Compose"
+      - "Kubernetes"
+      - "Linux"
+  responsibilities:
+      - >
+          Add features and fix bugs for back-end of the system.
+      - >
+          DevOps infrastructure and workflow of development, staging,
+          and production environment using Docker, Docker Compose,
+          and Kubernetes.
+
+- organization:
       name: "Star Labs LTD - Readz"
       url: "https://www.readz.com/"
       description: >
