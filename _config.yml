@@ -63,7 +63,7 @@ permalink: pretty
 timezone: America/Los_Angeles
 markdown: kramdown
 theme: jekyll-theme-cayman
-gems:
+plugins:
     - jekyll-coffescript
     - jekyll-paginate
     - jekyll-watch
