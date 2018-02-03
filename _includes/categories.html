@@ -1,0 +1,5 @@
+{% for category in site.categories %}
+<a href="/category/{{ category | first }}">
+    {{ category | first }}
+</a>
+{% endfor %}
