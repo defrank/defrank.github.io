@@ -6,7 +6,7 @@
           first on eSports, and their sponsor ecosystems, increasing
           franchise and sponsorship revenues by making their audience
           data actionable.
-  title: "Backend Developer"
+  title: "Software Engineer Lead"
   type: "full-time"
   city: "Santa Monica"
   state: "CA"
@@ -22,7 +22,10 @@
       Backend software development with a focus on infrastructure.
   technologies:
       - "Python 3.6"
+      - "Falcon"
       - "Flask"
+      - "Apache Beam"
+      - "ArangoDB"
       - "MongoDB"
       - "RabbitMQ"
       - "Git"

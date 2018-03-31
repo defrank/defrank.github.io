@@ -3,9 +3,7 @@ title: About Me
 layout: default
 ---
 
-## About me
-
-### Formalities
+## Formalities
 
 <dl>
     <dt>Occupation</dt>
@@ -19,7 +17,7 @@ layout: default
     <dd>Venice High School</dd>
 </dl>
 
-### Hobbies
+## Hobbies
 
 * Learning
 * Reading and listening to audiobooks
@@ -28,7 +26,7 @@ layout: default
   press=205)
 * Dog training.
 
-### Favorites
+## Favorites
 
 <dl>
     <dt>Color</dt>
