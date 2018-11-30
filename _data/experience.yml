@@ -1,6 +1,6 @@
 - organization:
       name: "FanAI"
-      url: "http://fanai.io/"
+      url: "https://fanai.io/"
       description: >
           FanAI is an AI-driven Audience Monetization platform focusing
           first on eSports, and their sponsor ecosystems, increasing
@@ -19,28 +19,40 @@
       month:
       day:
   role: >
-      Backend software development with a focus on infrastructure.
+      Lead back-end team in distributed systems and data ETL.
   technologies:
-      - "Python 3.6"
+      - "Google Cloud Platform"
+      - "Kubernetes"
+      - "Helm"
+      - "Docker"
+      - "Docker Compose"
+      - "Python 3.7"
       - "Falcon"
-      - "Flask"
+      - "Dramatiq"
       - "Apache Beam"
+      - "Redis"
       - "ArangoDB"
       - "MongoDB"
       - "RabbitMQ"
       - "Git"
-      - "Google Cloud Platform"
-      - "Docker"
-      - "Docker Compose"
-      - "Kubernetes"
       - "Linux"
   responsibilities:
-      - >
-          Add features and fix bugs for back-end of the system.
-      - >
-          DevOps infrastructure and workflow of development, staging,
-          and production environment using Docker, Docker Compose,
-          and Kubernetes.
+    - >-
+      Pioneered the microservices architecture that powers the product
+      API and data ETL.
+    - >-
+      Designed, implemented, and deployed the Twitter followers data
+      ETL in Google Kubernetes Engine.
+    - >-
+      Improved distributed systems stability and scalability by
+      replacing big data services with Google products such as RabbitMQ
+      with Pub/Sub, MongoDB with Big Query, etc.
+    - >-
+      Reduced ETL costs by replacing Apache Beam/Dataflow with
+      microservice-based ETL pipelines.
+    - >-
+      Worked with Distributed Actor Framework, Dramatiq (like Celery),
+      to asynchronously process jobs communicated over a message broker.
 
 - organization:
       name: "Star Labs LTD - Readz"
