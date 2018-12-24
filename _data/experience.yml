@@ -21,21 +21,22 @@
   role: >
       Lead back-end team in distributed systems and data ETL.
   technologies:
-      - "Google Cloud Platform"
-      - "Kubernetes"
-      - "Helm"
-      - "Docker"
-      - "Docker Compose"
-      - "Python 3.7"
-      - "Falcon"
-      - "Dramatiq"
-      - "Apache Beam"
-      - "Redis"
-      - "ArangoDB"
-      - "MongoDB"
-      - "RabbitMQ"
-      - "Git"
-      - "Linux"
+    - "Google Cloud Platform"
+    - "Kubernetes"
+    - "Helm"
+    - "Docker"
+    - "Docker Compose"
+    - "Python 3.7"
+    - "Pytest"
+    - "Falcon"
+    - "Dramatiq"
+    - "Apache Beam"
+    - "Redis"
+    - "ArangoDB"
+    - "MongoDB"
+    - "RabbitMQ"
+    - "Git"
+    - "Linux"
   responsibilities:
     - >-
       Pioneered the microservices architecture that powers the product
