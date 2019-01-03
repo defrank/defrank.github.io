@@ -21,7 +21,7 @@
   role: >
       Lead back-end team in distributed systems and data ETL.
   technologies:
-    - "Google Cloud Platform"
+    - "GCP"
     - "Kubernetes"
     - "Helm"
     - "Docker"
