@@ -19,18 +19,20 @@
       month:
       day:
   role: >
-      Lead back-end team in distributed systems and data ETL.
+      Lead backend team in distributed systems and data pipelines.
   technologies:
       - "Google Cloud Platform"
       - "Kubernetes"
       - "Helm"
       - "Docker"
       - "Docker Compose"
-      - "Python 3.7"
+      - "Python 3.8"
       - "Falcon"
+      - "Hug"
       - "Dramatiq"
       - "Apache Beam"
       - "Redis"
+      - "PostgreSQL"
       - "ArangoDB"
       - "MongoDB"
       - "RabbitMQ"
@@ -38,18 +40,21 @@
       - "Linux"
   responsibilities:
     - >-
+      Lead duties are focused on meeting the backend's product roadmap.
+      This includes sprint planning, unblocking teammates, improving
+      rolling velocity, mentoring new hires, and documenting best
+      practices and processes.
+    - >-
       Pioneered the microservices architecture that powers the product
       API and data ETL.
     - >-
-      Designed, implemented, and deployed the Twitter followers data
-      ETL in Google Kubernetes Engine.
+      Designed, implemented, and deployed data pipelines in Google
+      Kubernetes Engine of which the highest impact was an ETL to ingest
+      about one terabyte of Twitter followers daily.
     - >-
       Improved distributed systems stability and scalability by
       replacing big data services with Google products such as RabbitMQ
       with Pub/Sub, MongoDB with Big Query, etc.
-    - >-
-      Reduced ETL costs by replacing Apache Beam/Dataflow with
-      microservice-based ETL pipelines.
     - >-
       Worked with Distributed Actor Framework, Dramatiq (like Celery),
       to asynchronously process jobs communicated over a message broker.
