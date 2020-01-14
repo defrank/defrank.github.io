@@ -27,6 +27,7 @@
       - "Docker"
       - "Docker Compose"
       - "Python 3.8"
+      - "Pytest"
       - "Falcon"
       - "Hug"
       - "Dramatiq"
