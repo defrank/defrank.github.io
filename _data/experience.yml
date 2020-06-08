@@ -21,7 +21,7 @@
   role: >
       Lead backend team in distributed systems and data pipelines.
   technologies:
-      - "Google Cloud Platform"
+      - "GCP"
       - "Kubernetes"
       - "Helm"
       - "Docker"
