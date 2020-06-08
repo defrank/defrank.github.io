@@ -474,7 +474,7 @@ layout: blank
     }
 
     aside#print {
-        display: none;
+        display: block;
         position: fixed;
         right: 2%;
         bottom: 2%;
@@ -886,5 +886,8 @@ layout: blank
 </footer>
 
 <aside id="print">
-    <button type="button" onclick="window.print()">Print me!</button>
+    {% assign pdf = site.static_files | where: "basename", "resume-derekmfrank" | first %}
+
+    <a target="_blank" href="{{ pdf.path }}?v={{ timestamp }}">Download</a>
+    <!--button type="button" onclick="window.print()">Print me!</button-->
 </aside>
