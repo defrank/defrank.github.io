@@ -6,7 +6,7 @@
           first on eSports, and their sponsor ecosystems, increasing
           franchise and sponsorship revenues by making their audience
           data actionable.
-  title: "Software Engineer Lead"
+  title: "Lead Backend Engineer"
   type: "full-time"
   city: "Santa Monica"
   state: "CA"
@@ -25,8 +25,7 @@
       - "Kubernetes"
       - "Helm"
       - "Docker"
-      - "Docker Compose"
-      - "Python 3.8"
+      - "Python3"
       - "Pytest"
       - "Falcon"
       - "Hug"
@@ -84,18 +83,18 @@
       Full-stack software development with a focus on infrastructure
       and internal tools.
   technologies:
-      - "Python 2.7"
-      - "Django 1.8"
+      - "Python2"
+      - "Django"
       - "Javascript"
       - "HTML5"
       - "CSS3"
       - "MySQL"
-      - "Apache 2"
+      - "Apache2"
       - "Git"
       - "AWS"
       - "Akamai"
       - "BottlePy"
-      - "SQLite 3"
+      - "SQLite"
       - "PhantomJS"
       - "Bash"
       - "Linux"
@@ -147,7 +146,7 @@
       validate product requirements in a FCC regulated and waterfall
       development cycle environment.
   technologies:
-      - "Python 2.7"
+      - "Python2"
       - "Javascript"
   responsibilities:
       - >
