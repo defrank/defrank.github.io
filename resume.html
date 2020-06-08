@@ -480,6 +480,10 @@ layout: blank
         bottom: 2%;
     }
 
+    aside a {
+        background-color: white;
+    }
+
     main > section > *:not(section) {
         flex-basis: 100%;
     }
@@ -829,6 +833,7 @@ layout: blank
                class="organization"
                target="_blank">University of California, Santa Cruz</a>
             <div class="metadata"><time>2008</time> - <time>2012</time> | Santa Cruz, CA</div>
+            <!--
             <p>Acquired the following skills and experiences:</p>
             <ol>
                 <li>Demonstrate mastery of computer science in the following core knowledge areas:
@@ -873,6 +878,7 @@ layout: blank
                 <dd class="course"><a href="https://courses.soe.ucsc.edu/courses/cmps112/Spring11/01"
                     target="_blank">Comparative Programming Languages</a></dd>
             </dl>
+            -->
         </section>
     </section>
 
@@ -881,13 +887,13 @@ layout: blank
 <footer>
     {% capture start_date %}2017{% endcapture %}
     {% assign year = 'now' | date:'%Y' %}
-    <p>&#xa9;{{ start_date }}{% unless start_date == year %} - {{ 'now' | date:'%Y' }}{% endunless %} {{ site.author.name }}</p>
-    <p><em>I do not authorize 3rd parties to alter this content nor to represent me.</em></p>
+    <p>&#xa9;{{ 'now' | date:'%Y' }} {{ site.author.name }}</p>
+    <!--p><em>I do not authorize 3rd parties to alter this content nor to represent me.</em></p-->
 </footer>
 
 <aside id="print">
     {% assign pdf = site.static_files | where: "basename", "resume-derekmfrank" | first %}
 
-    <a target="_blank" href="{{ pdf.path }}?v={{ timestamp }}">Download</a>
+    <a href="{{ pdf.path }}?v={{ timestamp }}" download>Download PDF</a>
     <!--button type="button" onclick="window.print()">Print me!</button-->
 </aside>
