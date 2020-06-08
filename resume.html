@@ -580,13 +580,10 @@ layout: blank
 </nav>
 
 <header>
-    {% assign image = site.static_files | where: "basename", "dmf-cherry-picking-with-ds" | first %}
+    {% assign image = site.static_files | where: "basename", "profile" | first %}
     {% assign timestamp = image.modified_time | date: "%s" %}
 
-    <img id="profile-pic"
-         src="{{ image.path }}?v={{ timestamp }}"
-         alt="Derek M. Frank {{ image.basename | remove_first: "dmf-" | split: "-" | join: " " }}"
-         />
+    <img id="profile-pic" src="{{ image.path }}?v={{ timestamp }}" alt="Derek M. Frank {{ image.basename }}" />
 
     <address id="contact-info">
         <h1>Derek M Frank</h1>
