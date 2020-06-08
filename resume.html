@@ -95,7 +95,7 @@ layout: blank
 
 <style scoped="scoped">
     /*
-       
+
        COLORS
 
        Primary: #48818A rgb(72, 129, 138)
@@ -578,13 +578,15 @@ layout: blank
     }
 </style>
 
+{% assign year = 'now' | date: '%Y' %}
+{% assign timestamp = image.modified_time | date: '%s' %}
+{% assign image = site.static_files | where: 'basename', 'profile' | first %}
+{% assign professional_start = site.data.experience | map: 'start' | map: 'year' | sort | first %}
+
 <nav>
 </nav>
 
 <header>
-    {% assign image = site.static_files | where: "basename", "profile" | first %}
-    {% assign timestamp = image.modified_time | date: "%s" %}
-
     <img id="profile-pic" src="{{ image.path }}?v={{ timestamp }}" alt="Derek M. Frank {{ image.basename }}" />
 
     <address id="contact-info">
@@ -637,16 +639,22 @@ layout: blank
     <section id="summary">
         <h3>Summary</h3>
 
-        <p>Detail-oriented, software engineer with experience in analysis, design, development,
-        testing, and implementation of microservice architectures.  While I do have a full-stack
-        background, my focus is in distributed systems, infrastructure, data engineering, and
-        RESTful APIs.</p>
+        <p>{{ year | minus: professional_start }}+ years of professional experience as a software
+        engineer.  With significant startup experience, I have built and maintained modern
+        SOA/microservices, cloud infrastructure, event-driven data pipelines (ETLs), RESTful APIs,
+        impactful internal tools, and user-focused web applications.  A proven leader, I have grown
+        to head a small team with three direct reports.</p>
 
-        <p>At a more personal level, I am passionate of my work, excited about technology, always
-        looking to take initiative, and hold myself to high standards.  Never will I stop learning
-        and growing.  My outside interests include: training my dogs, lifting heavy weight,
-        practicing Jiu-Jitsu, reading comics/manga, listening to audiobooks, snowboarding, and
-        learning new things.</p>
+        <p>Looking to find a mission-driven company trying to improve, push the boundaries of, and
+        inspire human society with technology.  Industries that would drive such passion include
+        space exploration, artificial general intelligence (AGI), autonomous driving, autonomous
+        learning, brain-computer interfacing, etc.</p>
+
+        <p>At a personal level, I am passionate of my work, excited about technology, always looking
+        to take initiative, and hold myself to high standards.  Never will I stop learning and
+        growing.  My outside interests include: training my dogs, lifting heavy weight, practicing
+        Jiu-Jitsu, reading comics/manga, listening to audiobooks, snowboarding, venturing outdoors,
+        and learning new things.</p>
     </section>
 
     <div class="page-break"></div>
@@ -878,8 +886,6 @@ layout: blank
 </main>
 
 <footer>
-    {% capture start_date %}2017{% endcapture %}
-    {% assign year = 'now' | date:'%Y' %}
     <p>&#xa9;{{ 'now' | date:'%Y' }} {{ site.author.name }}</p>
     <!--p><em>I do not authorize 3rd parties to alter this content nor to represent me.</em></p-->
 </footer>
