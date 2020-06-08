@@ -486,9 +486,6 @@ layout: blank
     main > section > *:not(section) {
         flex-basis: 100%;
     }
-    main > section > section {
-        flex-basis: 33%;
-    }
     /*
     main > section > section:nth-of-type(even) {
         border-left-color: orange;
@@ -500,7 +497,7 @@ layout: blank
         flex-basis: 49%;
     }
     main > section > section.small {
-        /*
+        /** Disable small now that only 2 skill sections.
         flex-basis: 24%;
         */
     }
@@ -508,9 +505,14 @@ layout: blank
         flex-flow: column;
         flex-basis: 99%;
     }
+    @media print and (max-width: 1023px) {
+        main > section > section:not(.small) {
+            flex-basis: 99%;
+        }
+    }
     @media screen and (max-width: 1023px) {
         main > section > section {
-            flex-basis: 49%;
+            flex-basis: 99%;
         }
         main > section > section.small {
             flex-basis: 49%;
@@ -642,11 +644,9 @@ layout: blank
 
         <p>At a more personal level, I am passionate of my work, excited about technology, always
         looking to take initiative, and hold myself to high standards.  Never will I stop learning
-        and growing.</p>
-
-        <p>My outside interests include: training my dogs, lifting heavy weight, practicing
-        Jiu-Jitsu, reading comics/manga, listening to audiobooks, snowboarding, and learning new
-        things.</p>
+        and growing.  My outside interests include: training my dogs, lifting heavy weight,
+        practicing Jiu-Jitsu, reading comics/manga, listening to audiobooks, snowboarding, and
+        learning new things.</p>
     </section>
 
     <div class="page-break"></div>
@@ -660,11 +660,11 @@ layout: blank
                 <div>
                     <dt>Expert/Advanced</dt>
                     <dd>Python</dd>
+                    <dd>Javascript</dd>
                 </div>
 
                 <div>
                     <dt>Proficient</dt>
-                    <dd>Javascript</dd>
                     <dd>C</dd>
                     <dd>C++</dd>
                     <dd>Java</dd>
@@ -673,12 +673,17 @@ layout: blank
                     <dd>Bash</dd>
                 </div>
 
-                <div>
+                <!--div>
                     <dt>Prior experience</dt>
                     <dd>Haskell</dd>
                     <dd>Prolog</dd>
                     <dd>Scheme</dd>
                     <dd>OCaml</dd>
+                </div-->
+
+                <div>
+                    <dt>Learning</dt>
+                    <dd>Go</dd>
                 </div>
             </dl>
         </section>
@@ -716,10 +721,6 @@ layout: blank
                     <dd>Git</dd>
                     <dd>Docker</dd>
                     <dd>Kubernetes</dd>
-                    <dd>HTML5</dd>
-                    <dd>CSS3</dd>
-                    <dd>JSON</dd>
-                    <dd>XML</dd>
                     <dd>REST</dd>
                 </div>
 
@@ -730,13 +731,10 @@ layout: blank
                     <dd>Apache Beam</dd>
                     <dd>Redis</dd>
                     <dd>PostgresQL</dd>
-                    <dd>MySQL</dd>
                     <dd>SQLite</dd>
-                    <dd>MongoDB</dd>
                     <dd>ArangoDB</dd>
-                    <dd>Gunicorn</dd>
                     <dd>Nginx</dd>
-                    <dd>Apache</dd>
+                    <dd>JWT</dd>
                 </div>
             </dl>
         </section>
