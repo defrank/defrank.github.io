@@ -10,7 +10,7 @@ layout: default
     <dd>Software Engineer</dd>
 
     <dt>Location</dt>
-    <dd>Chatsworth, CA (Greater Los Angeles)</dd>
+    <dd>Del Rey, Los Angeles, CA</dd>
 
     <dt>Education</dt>
     <dd>UCSC: Computer Science, Bachelor of Science</dd>
@@ -22,7 +22,7 @@ layout: default
 * Learning
 * Reading and listening to audiobooks
 * Snowboarding
-* Powerlifting (PRs in lbs: deadlift=420, squat=360, bench=325,
+* Powerlifting (PRs in lbs: deadlift=420, squat=365, bench=325,
   press=205)
 * Dog training.
 
@@ -33,16 +33,17 @@ layout: default
     <dd>Green (even though I'm blue-green colorblind...)</dd>
 
     <dt>Book (leisure)</dt>
-    <dd>Harry Potter (my SO and I continue to re-listen to the Stephen Fry audiobooks)</dd>
+    <dd>Mistborn</dd>
+    <dd>Harry Potter (15+ listens of the Stephen Fry audiobooks)</dd>
 
     <dt>Book (educational)</dt>
-    <dd>Pragmatic Programmer (I have a need to keep improving myself)</dd>
+    <dd>Pragmatic Programmer</dd>
 
     <dt>Manga</dt>
     <dd>Dragon Ball (I'm obsessed)</dd>
 
     <dt>Lift</dt>
-    <dd>Sumo deadlift</dd>
+    <dd>Deadlift</dd>
 </dl>
 
 ----
