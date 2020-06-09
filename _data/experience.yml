@@ -41,23 +41,25 @@
   responsibilities:
     - >-
       Lead duties are focused on meeting the backend's product roadmap.
-      This includes sprint planning, unblocking teammates, improving
-      rolling velocity, mentoring new hires, and documenting best
-      practices and processes.
+      This includes hiring, sprint planning, unblocking teammates,
+      improving rolling velocity, mentoring new hires, and documenting
+      best practices and processes.
     - >-
-      Pioneered the microservices architecture that powers the product
-      API and data ETL.
+      Built several data pipelines for Twitter, Twitch, and FullContact
+      of which the highest impact was an ETL to ingest about one
+      terabyte of Twitter followers daily.  Designed to be composable
+      and event-driven so that multiple teams could use without direct
+      support from the backend team.
     - >-
-      Designed, implemented, and deployed data pipelines in Google
-      Kubernetes Engine of which the highest impact was an ETL to ingest
-      about one terabyte of Twitter followers daily.
+      Implemented and optimized data-intensive APIs.  Improved API
+      stability and performance by converting long-running requests to
+      poll-based APIs and enabling strategic pre-caching by working
+      with the product team to change the user flow.
     - >-
-      Improved distributed systems stability and scalability by
-      replacing big data services with Google products such as RabbitMQ
-      with Pub/Sub, MongoDB with Big Query, etc.
-    - >-
-      Worked with Distributed Actor Framework, Dramatiq (like Celery),
-      to asynchronously process jobs communicated over a message broker.
+      Prioritized team collaboration and maintainability.  Migrated
+      frameworks and libraries to enable auto-generation of OpenAPI
+      documentation.  Enforced pre-commit hooks to auto-format, lint,
+      and find security vulnerabilities of the codebase.
 
 - organization:
       name: "Star Labs LTD - Readz"
