@@ -546,34 +546,39 @@ layout: blank
         content: ',';
     }
 
-    dl.courses {
+    .courses {
         display: flex;
         flex-flow: row wrap;
     }
-    dl.courses dt {
+    .courses dt {
         flex-basis: 99%;
     }
-    dl.courses dd.course {
+    .courses dd.course {
         flex-basis: 19%;
     }
     @media all and (max-width: 1365px) {
-        dl.courses dd.course {
+        .courses dd.course {
             flex-basis: 24%;
         }
     }
     @media all and (max-width: 1023px) {
-        dl.courses dd.course {
+        .courses dd.course {
             flex-basis: 33%;
         }
     }
     @media all and (max-width: 599px) {
-        dl.courses dd.course {
+        .courses dd.course {
             flex-basis: 49%;
         }
     }
     @media all and (max-width: 374px) {
-        dl.courses dd.course {
+        .courses dd.course {
             flex-basis: 99%;
+        }
+    }
+    @media print {
+        .excess {
+            display: none;
         }
     }
 </style>
@@ -645,12 +650,12 @@ layout: blank
         impactful internal tools, and user-focused web applications.  A proven leader, I have grown
         to head a small team with three direct reports.</p>
 
-        <p>Looking to find a mission-driven company trying to improve, push the boundaries of, and
+        <p class="excess">Looking to find a mission-driven company trying to improve, push the boundaries of, and
         inspire human society with technology.  Industries that would drive such passion include
         space exploration, artificial general intelligence (AGI), autonomous driving, autonomous
         learning, brain-computer interfacing, etc.</p>
 
-        <p>At a personal level, I am passionate of my work, excited about technology, always looking
+        <p class="excess">At a personal level, I am passionate of my work, excited about technology, always looking
         to take initiative, and hold myself to high standards.  Never will I stop learning and
         growing.  My outside interests include: training my dogs, lifting heavy weight, practicing
         Jiu-Jitsu, reading comics/manga, listening to audiobooks, snowboarding, venturing outdoors,
@@ -855,7 +860,8 @@ layout: blank
                 <li>Write about and orally communicate technical material about computer science and
                     computer systems, broadly conceived.</li>
             </ol>
-            <dl class="courses">
+            -->
+            <dl class="courses excess">
                 <dt><a target="_blank"
                     href="https://github.com/defrank/coursework#readme">Relevant Courses</a></dt>
                 <dd class="course"><a href="https://courses.soe.ucsc.edu/courses/cmps140/Winter12/01"
@@ -879,7 +885,6 @@ layout: blank
                 <dd class="course"><a href="https://courses.soe.ucsc.edu/courses/cmps112/Spring11/01"
                     target="_blank">Comparative Programming Languages</a></dd>
             </dl>
-            -->
         </section>
     </section>
 
